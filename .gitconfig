@@ -1,0 +1,21 @@
+[user]
+	name = Vitaliy Pisnya
+	email = vitaliy.pisnya@gmail.com
+[core]
+	editor = vim
+[color]
+	status = auto
+	branch = auto
+	interactive = auto
+	diff = auto
+	ui = auto
+[push]
+	default = simple
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p

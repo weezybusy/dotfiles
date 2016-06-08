@@ -1,0 +1,8 @@
+#!/bin/bash
+pactl set-sink-volume 0 30%
+if [ pgrep "mocp" > /dev/null ]; then
+	mocp -cap ~/Templates/alarm/clair_de_lune.mp3
+else
+	mocp -S
+	mocp -cap ~/Templates/alarm/clair_de_lune.mp3
+fi
