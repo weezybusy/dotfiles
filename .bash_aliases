@@ -30,7 +30,7 @@ alias valgrind='valgrind --tool=memcheck --leak-check=full --show-reachable=yes'
 alias gdb='gdb -quiet'
 alias gdbt='gdbtui -q'
 
-# system update and upgrade system
+# system update and upgrade
 alias update='sudo apt-get update'
 alias upgrade='sudo apt-get update && sudo apt-get upgrade'
 
@@ -53,7 +53,7 @@ alias ls='ls --color=auto --group-directories-first'
 alias ll='ls -lhF --color=auto --group-directories-first'
 alias la='ls -aF --color=auto --group-directories-first'
 
-# more safe and verbose file manipulations
+# verbose output
 alias rm='rm -v'
 alias cp='cp -v'
 alias mv='mv -v'
