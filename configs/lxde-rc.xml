@@ -282,6 +282,12 @@
     <keybind key="W-F11">
       <action name="Reconfigure"/>
     </keybind>
+    <!-- Key binding for locking the screen -->
+    <keybind key="W-l">
+      <action name="Execute">
+	<command>/usr/bin/dm-tool lock</command>
+      </action>
+    </keybind>
     <!-- Keybindings for running applications -->
     <keybind key="W-f">
       <action name="Execute">
