@@ -225,22 +225,22 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="W-1">
+    <keybind key="W-F1">
       <action name="Desktop">
         <desktop>1</desktop>
       </action>
     </keybind>
-    <keybind key="W-2">
+    <keybind key="W-F2">
       <action name="Desktop">
         <desktop>2</desktop>
       </action>
     </keybind>
-    <keybind key="W-3">
+    <keybind key="W-F3">
       <action name="Desktop">
         <desktop>3</desktop>
       </action>
     </keybind>
-    <keybind key="W-4">
+    <keybind key="W-F4">
       <action name="Desktop">
         <desktop>4</desktop>
       </action>
@@ -279,7 +279,7 @@
       </action>
     </keybind>
     <!-- Restart openbox -->
-    <keybind key="W-F11">
+    <keybind key="W-r">
       <action name="Reconfigure"/>
     </keybind>
     <!-- Key binding for locking the screen -->
@@ -377,27 +377,12 @@
       <action name="ToggleFullscreen"/>
     </keybind>
     <!--keybindings for LXPanel -->
-    <keybind key="W-r">
-      <action name="Execute">
-        <command>lxpanelctl run</command>
-      </action>
-    </keybind>
     <keybind key="A-F2">
       <action name="Execute">
         <command>lxpanelctl run</command>
       </action>
     </keybind>
-    <keybind key="C-Escape">
-      <action name="Execute">
-        <command>lxpanelctl menu</command>
-      </action>
-    </keybind>
     <keybind key="A-F1">
-      <action name="Execute">
-        <command>lxpanelctl menu</command>
-      </action>
-    </keybind>
-    <keybind key="C-Escape">
       <action name="Execute">
         <command>lxpanelctl menu</command>
       </action>
