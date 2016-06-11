@@ -4,7 +4,7 @@ SETUP CRONTAB:
 0 23 * * * rsync -urv --delete --exclude='/lost+found' /media/weezy/work/* /media/weezy/stuff/work
 
 # alarm
-0 6 * * * ~/Music/alarm/wakeup
+0 6 * * * ~/Templates/alarm/wakeup
 
 
 FIX HANGING ON COPYING LARGE FILES:
