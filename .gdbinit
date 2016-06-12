@@ -23,7 +23,6 @@ view the list with something like
 
 This macro defines $ptr as the current pointed-to list struct, and $pdata as the
 data in that list element.
-
 end
 
 define pnext
@@ -48,13 +47,53 @@ define plistdata
 	end
 
 	if $pdata
-		p $pdata
+		p ($arg0 *) $pdata
 	else
-		p "empty"
+		p "NULL"
 	end
+end
+
+document plist
+Print all elements of the list. E.g., given the declaration
+
+	List *pl;
+
+view the list with something like
+
+	gdb> plist <type> <list name>
+
+This macro defines $ptr as the current pointed-to list struct, and $pdata as the
+data in that list element.
 end
 
 document plistdata
 This is intended to be used by phead and pnext, q.v. It sets $pdata and prints
 its value.
+end
+
+define plist
+	set $ptr = $arg1
+	while $ptr
+		if $ptr
+			set $pdata = $ptr->data
+		else
+			set $pdata = 0
+		end
+
+		if $pdata
+			p ($arg0 *) $pdata
+		else
+			p "NULL"
+		end
+
+		set $ptr = $ptr->next
+	end
+end
+
+define hook-print
+	echo <-----\n
+end
+
+define hookpost-print
+	echo ----->\n
 end
