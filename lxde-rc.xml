@@ -316,6 +316,15 @@
         <command>xterm -e 'tmux'</command>
       </action>
     </keybind>
+    <keybind key="W-m">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Audio player</name>
+        </startupnotify>
+        <command>xterm -e 'mocp'</command>
+      </action>
+    </keybind>
     <keybind key="C-A-Delete">
       <action name="Execute">
         <startupnotify>
