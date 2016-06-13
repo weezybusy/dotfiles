@@ -45,7 +45,7 @@ alias autoremove='sudo apt-get autoremove'
 alias autoclean='sudo apt-get autoclean'
 
 # backup work
-alias bup='rsync -urv --delete --exclude="/lost+found" /media/weezy/work/* /media/weezy/stuff/work/'
+alias bup='rsync -urv --delete /media/weezy/work/* /media/weezy/stuff/work_backup'
 
 # ls extensions
 alias l='ls -F --color=auto --group-directories-first'
