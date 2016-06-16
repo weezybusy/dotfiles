@@ -94,7 +94,7 @@ temp() {
 
 # timer
 timer() {
-        echo 'mplayer ~/Templates/alarm_sounds/Bomb-timer.mp3 &> /dev/null' | at now + $1 min
+        echo 'mplayer ~/Templates/sounds/Bomb-timer.mp3 &> /dev/null' | at now + $1 min
 }
 
 # terminal colors
