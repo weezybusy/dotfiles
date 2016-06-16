@@ -47,6 +47,9 @@ alias autoclean='sudo apt-get autoclean'
 # backup work
 alias bup='rsync -urv --delete /media/weezy/work/* /media/weezy/stuff/work_backup'
 
+# timer
+# alias timer='bash ~/Templates/timer/timer'
+
 # ls extensions
 alias l='ls -F --color=auto --group-directories-first'
 alias ls='ls --color=auto --group-directories-first'

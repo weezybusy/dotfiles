@@ -285,7 +285,7 @@
     <!-- Key binding for locking the screen -->
     <keybind key="W-l">
       <action name="Execute">
-	<command>/usr/bin/dm-tool lock</command>
+        <command>/usr/bin/dm-tool lock</command>
       </action>
     </keybind>
     <!-- Keybindings for running applications -->

@@ -7,6 +7,8 @@ set wildmenu
 set showcmd
 set ignorecase
 set smartcase
+set incsearch
+set expandtab
 set nostartofline
 set number
 set textwidth=80
@@ -15,8 +17,8 @@ set nowrap
 set cursorline
 set ruler
 set showmatch
+set autoindent
 set cindent
-set incsearch
 set autowrite
 set autoread
 set noswapfile 

@@ -92,6 +92,11 @@ temp() {
 	echo $RES
 }
 
+# timer
+timer() {
+        echo 'mplayer ~/Templates/alarm_sounds/Bomb-timer.mp3 &> /dev/null' | at now + $1 min
+}
+
 # terminal colors
 if [ "$TERM" = "linux" ]; then
     echo -en "\e]P0282828" #black
