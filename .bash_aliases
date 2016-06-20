@@ -17,8 +17,8 @@ alias salad='cd ~/Music/salad/'
 alias jazz='cd ~/Music/jazz/'
 
 # working directories
-alias c='cd /media/weezy/work/c'
-alias doit='cd /media/weezy/work/doit'
+alias c='cd /media/vi/work/c'
+alias doit='cd /media/vi/work/doit'
 
 # compiler setup
 alias gcc='gcc -g -std=c99 -Wall -Werror -Wextra -Wpedantic'
@@ -45,7 +45,7 @@ alias autoremove='sudo apt-get autoremove'
 alias autoclean='sudo apt-get autoclean'
 
 # backup work
-alias bup='rsync -urv --delete /media/weezy/work/* /media/weezy/stuff/work_backup'
+alias bup='rsync -urv --delete /media/vi/work/* /media/vi/stuff/work'
 
 # ls extensions
 alias l='ls -F --color=auto --group-directories-first'
