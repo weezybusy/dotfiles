@@ -316,6 +316,15 @@
         <command>xterm</command>
       </action>
     </keybind>
+    <keybind key="W-p">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Terminal</name>
+        </startupnotify>
+        <command>xterm -e 'tmux'</command>
+      </action>
+    </keybind>
     <keybind key="W-m">
       <action name="Execute">
         <startupnotify>
