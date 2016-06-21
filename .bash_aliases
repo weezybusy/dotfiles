@@ -20,9 +20,6 @@ alias jazz='cd ~/Music/jazz/'
 alias c='cd /media/vi/work/c'
 alias doit='cd /media/vi/work/doit'
 
-# compiler setup
-alias gcc='gcc -g -std=c99 -Wall -Werror -Wextra -Wpedantic'
-
 # valgrind extensions
 alias valgrind='valgrind --tool=memcheck --leak-check=full --show-reachable=yes'
 
