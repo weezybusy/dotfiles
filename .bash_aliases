@@ -15,10 +15,11 @@ alias gh="git log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short"
 # music directories
 alias salad='cd ~/Music/salad/'
 alias jazz='cd ~/Music/jazz/'
+alias mix='cd ~/Music/mix/'
 
 # working directories
-alias c='cd /media/vi/work/c'
-alias doit='cd /media/vi/work/doit'
+alias c='cd /media/weezy/work/c'
+alias doit='cd /media/weezy/work/doit'
 
 # valgrind extensions
 alias valgrind='valgrind --tool=memcheck --leak-check=full --show-reachable=yes'
@@ -42,7 +43,7 @@ alias autoremove='sudo apt-get autoremove'
 alias autoclean='sudo apt-get autoclean'
 
 # backup work
-alias bup='rsync -urv --delete /media/vi/work/* /media/vi/stuff/work'
+alias bup='rsync -urv --delete /media/weezy/work/* /media/weezy/stuff/work'
 
 # ls extensions
 alias l='ls -F --color=auto --group-directories-first'
