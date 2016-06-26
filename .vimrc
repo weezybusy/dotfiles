@@ -11,11 +11,9 @@ set incsearch
 set expandtab
 set nostartofline
 set number
-set relativenumber
 set textwidth=80
 set colorcolumn=+1
 set nowrap
-set cursorline
 set ruler
 set showmatch
 set autoindent
@@ -27,6 +25,13 @@ set foldmethod=syntax
 set foldlevel=1
 set foldnestmax=1
 syntax on
-set background=dark
-set t_Co=256
-colorscheme gruvbox
+highlight Comment    ctermfg=grey
+highlight Error      ctermfg=yellow
+highlight Constant   ctermfg=none
+highlight Identifier ctermfg=none
+highlight Statement  ctermfg=none
+highlight PreProc    ctermfg=none
+highlight Type       ctermfg=none
+highlight Special    ctermfg=none
+highlight Underlined ctermfg=none
+highlight MatchParen cterm=underline ctermbg=none ctermfg=none
