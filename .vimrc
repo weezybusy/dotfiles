@@ -1,4 +1,3 @@
-set nocompatible
 filetype plugin indent on
 set encoding=utf8
 set fileformat=unix
@@ -11,6 +10,7 @@ set incsearch
 set expandtab
 set nostartofline
 set number
+set relativenumber
 set textwidth=80
 set colorcolumn=+1
 set nowrap
@@ -24,6 +24,7 @@ set noswapfile
 set foldmethod=syntax
 set foldlevel=1
 set foldnestmax=1
+set list
 set t_Co=256
 syntax on
 set background=dark

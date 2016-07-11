@@ -24,6 +24,14 @@ alias doit='cd /media/weezy/work/doit'
 # valgrind extensions
 alias valgrind='valgrind --tool=memcheck --leak-check=full --show-reachable=yes'
 
+# python
+alias python='python3.4'
+
+# fix tmux colors
+alias tmux='tmux -2'
+# tmux shortcut
+alias ta='tmux attach -t'
+
 # gdb
 alias gdb='gdb -quiet'
 alias gdbt='gdbtui -q'
