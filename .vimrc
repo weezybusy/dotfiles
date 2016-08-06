@@ -7,7 +7,6 @@ set showcmd
 set ignorecase
 set smartcase
 set incsearch
-set expandtab
 set nostartofline
 set number
 set relativenumber
@@ -18,6 +17,7 @@ set ruler
 set showmatch
 set autoindent
 set cindent
+set expandtab
 set autowrite
 set autoread
 set noswapfile 

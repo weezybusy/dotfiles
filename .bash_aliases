@@ -21,6 +21,9 @@ alias mix='cd ~/Music/mix/'
 alias c='cd /media/weezy/work/c'
 alias doit='cd /media/weezy/work/doit'
 
+# gcc
+alias cc='gcc -std=c99 -Wall'
+
 # valgrind extensions
 alias valgrind='valgrind --tool=memcheck --leak-check=full --show-reachable=yes'
 
