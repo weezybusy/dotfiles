@@ -44,7 +44,7 @@ alias update='sudo apt-get update'
 alias upgrade='sudo apt-get update && sudo apt-get upgrade'
 
 # apps
-alias install='sudo apt-get install'
+alias install='sudo apt install'
 alias remove='sudo apt-get remove'
 alias purge='sudo apt-get purge'
 alias search='apt-cache search'
