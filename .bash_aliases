@@ -20,6 +20,8 @@ alias mix='cd ~/Music/mix/'
 # working directories
 alias c='cd /media/weezy/work/c'
 alias doit='cd /media/weezy/work/doit'
+alias df='df -h'
+#alias unmount='python /media/weezy/work/projects/utils/unmount.py'
 
 # gcc
 alias cc='gcc -std=c99 -Wall'
@@ -28,7 +30,7 @@ alias cc='gcc -std=c99 -Wall'
 alias valgrind='valgrind --tool=memcheck --leak-check=full --show-reachable=yes'
 
 # python
-alias python='python3.4'
+alias python='python3'
 
 # fix tmux colors
 alias tmux='tmux -2'
