@@ -32,6 +32,9 @@ alias valgrind='valgrind --tool=memcheck --leak-check=full --show-reachable=yes'
 # python
 alias python='python3'
 
+# utils
+alias google='python ~/Templates/utils/google.py'
+
 # fix tmux colors
 alias tmux='tmux -2'
 # tmux shortcut

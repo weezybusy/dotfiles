@@ -37,7 +37,7 @@
     <primaryMonitor>1</primaryMonitor>
   </placement>
   <theme>
-    <name>Onyx</name>
+    <name>Minimal</name>
     <titleLayout>LMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -126,7 +126,7 @@
       <name>3</name>
       <name>4</name>
     </names>
-    <popupTime>400</popupTime>
+    <popupTime>0</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
        desktops.  Set this to 0 to disable the popup. -->
   </desktops>
