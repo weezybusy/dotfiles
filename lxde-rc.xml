@@ -123,8 +123,6 @@
     <names>
       <name>1</name>
       <name>2</name>
-      <name>3</name>
-      <name>4</name>
     </names>
     <popupTime>0</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -407,7 +405,6 @@
         <command>mocp -r</command>
       </action>
     </keybind>
-  </keyboard>
     <!-- Brightness controls -->
     <keybind key="XF86MonBrightnessDown">
       <action name="Execute">
@@ -427,6 +424,7 @@
         </startupnotify>
       </action>
     </keybind>
+  </keyboard>
   <mouse>
     <dragThreshold>8</dragThreshold>
     <!-- number of pixels the mouse must move before a drag begins -->
