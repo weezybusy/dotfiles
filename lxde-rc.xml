@@ -189,16 +189,14 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="C-A-Up">
-      <action name="DesktopUp">
-        <dialog>no</dialog>
-        <wrap>no</wrap>
+    <keybind key="W-1">
+      <action name="Desktop1">
+        <desktop>1</desktop>
       </action>
     </keybind>
-    <keybind key="C-A-Down">
-      <action name="DesktopDown">
-        <dialog>no</dialog>
-        <wrap>no</wrap>
+    <keybind key="W-2">
+      <action name="Desktop2">
+        <desktop>2</desktop>
       </action>
     </keybind>
     <keybind key="C-W-Left">
@@ -213,38 +211,6 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="S-A-Up">
-      <action name="SendToDesktopUp">
-        <dialog>no</dialog>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="S-A-Down">
-      <action name="SendToDesktopDown">
-        <dialog>no</dialog>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="W-F1">
-      <action name="Desktop">
-        <desktop>1</desktop>
-      </action>
-    </keybind>
-    <keybind key="W-F2">
-      <action name="Desktop">
-        <desktop>2</desktop>
-      </action>
-    </keybind>
-    <keybind key="W-F3">
-      <action name="Desktop">
-        <desktop>3</desktop>
-      </action>
-    </keybind>
-    <keybind key="W-F4">
-      <action name="Desktop">
-        <desktop>4</desktop>
-      </action>
-    </keybind>
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
@@ -257,26 +223,12 @@
       <action name="FocusToBottom"/>
       <action name="Unfocus"/>
     </keybind>
-    <keybind key="A-space">
-      <action name="ShowMenu">
-        <menu>client-menu</menu>
-      </action>
-    </keybind>
     <keybind key="W-space">
       <action name="ToggleDecorations"/>
     </keybind>
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
       <action name="NextWindow"/>
-    </keybind>
-    <keybind key="A-S-Tab">
-      <action name="PreviousWindow"/>
-    </keybind>
-    <keybind key="C-A-Tab">
-      <action name="NextWindow">
-        <panels>yes</panels>
-        <desktop>yes</desktop>
-      </action>
     </keybind>
     <!-- Restart openbox -->
     <keybind key="W-r">
@@ -334,15 +286,6 @@
         <command>xterm -e 'mocp'</command>
       </action>
     </keybind>
-    <keybind key="C-A-Delete">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Logout Session</name>
-        </startupnotify>
-        <command>lxsession-logout</command>
-      </action>
-    </keybind>
     <keybind key="W-c">
       <action name="Execute">
         <startupnotify>
@@ -359,6 +302,16 @@
           <name>upgrade</name>
         </startupnotify>
         <command>xterm -e "sudo apt-get update; sudo apt-get upgrade; bash"</command>
+      </action>
+    </keybind>
+    <!-- Logout session -->
+    <keybind key="C-A-Delete">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Logout Session</name>
+        </startupnotify>
+        <command>lxsession-logout</command>
       </action>
     </keybind>
     <!-- Vertical tiling -->
@@ -391,6 +344,7 @@
     <keybind key="W-Up">
       <action name="ToggleMaximizeFull"/>
     </keybind>
+    <!-- Open window in fullscreen -->
     <keybind key="W-Return">
       <action name="ToggleFullscreen"/>
     </keybind>
@@ -417,14 +371,15 @@
         <command>lxrandr</command>
       </action>
     </keybind>
+    <!-- Sound controls -->
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-        <command>amixer set Master 5%+ unmute</command>
+        <command>amixer set Master 8%+ unmute</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-        <command>amixer set Master 5%- unmute</command>
+        <command>amixer set Master 8%- unmute</command>
       </action>
     </keybind>
     <keybind key="XF86AudioMute">
@@ -436,24 +391,7 @@
         <command>amixer set Master toggle</command>
       </action>
     </keybind>
-    <keybind key="XF86MonBrightnessDown">
-      <action name="Execute">
-        <command>xbacklight -5</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-          <name>Decrease screen brightness</name>
-        </startupnotify>
-      </action>
-    </keybind>
-    <keybind key="XF86MonBrightnessUp">
-      <action name="Execute">
-        <command>xbacklight +5</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-          <name>Increase screen brightness</name>
-        </startupnotify>
-      </action>
-    </keybind>
+    <!-- Moc player controls -->
     <keybind key="XF86AudioPlay">
       <action name="Execute">
         <command>mocp -G</command>
@@ -470,6 +408,25 @@
       </action>
     </keybind>
   </keyboard>
+    <!-- Brightness controls -->
+    <keybind key="XF86MonBrightnessDown">
+      <action name="Execute">
+        <command>xbacklight -8</command>
+        <startupnotify>
+          <enabled>yes</enabled>
+          <name>Decrease screen brightness</name>
+        </startupnotify>
+      </action>
+    </keybind>
+    <keybind key="XF86MonBrightnessUp">
+      <action name="Execute">
+        <command>xbacklight +8</command>
+        <startupnotify>
+          <enabled>yes</enabled>
+          <name>Increase screen brightness</name>
+        </startupnotify>
+      </action>
+    </keybind>
   <mouse>
     <dragThreshold>8</dragThreshold>
     <!-- number of pixels the mouse must move before a drag begins -->
