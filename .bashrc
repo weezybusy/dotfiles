@@ -110,7 +110,7 @@ unmount() {
         fi
 }
 
-powoff() {
+poff() {
         if [[ $1 == [a-z] ]]; then
                 sdx="sd$1"
                 n="1"
