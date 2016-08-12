@@ -212,6 +212,9 @@
     <keybind key="W-space">
       <action name="ToggleDecorations"/>
     </keybind>
+    <keybind key="A-F7">
+      <action name="Move"/>
+    </keybind>
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
       <action name="NextWindow"/>
