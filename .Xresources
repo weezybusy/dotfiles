@@ -1,16 +1,16 @@
-xterm*loginShell:	 true
-xterm*utf8:		 1
-xterm*locale:		 true
-xterm*termName:		 xterm-256color
-xterm*saveLines:	 512
+xterm*loginShell:        true
+xterm*utf8:              1
+xterm*locale:            true
+xterm*termName:          xterm-256color
+xterm*saveLines:         512
 xterm*vt100.initialFont: 5
 xterm*selectToClipboard: true
-xterm*charClass:	 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
-xterm*metaSendsEscape:	 true
-xterm*allowBoldFonts:	 false
+xterm*charClass:         33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
+xterm*metaSendsEscape:   true
+xterm*allowBoldFonts:    false
 
-xterm.internalBorder:      0
-xterm.externalBorder:      0
+xterm.internalBorder:    0
+xterm.externalBorder:    0
 
 xterm*background: #282828
 xterm*foreground: #ebdbb2
