@@ -24,6 +24,7 @@
     <!-- when followMouse is enabled, and a window is given focus by moving the
        mouse into it, also raise the window -->
   </focus>
+
   <placement>
     <policy>Smart</policy>
     <!-- 'Smart' or 'UnderMouse' -->
@@ -36,6 +37,7 @@
        the active window is -->
     <primaryMonitor>1</primaryMonitor>
   </placement>
+
   <theme>
     <name>Minimal</name>
     <titleLayout>LMC</titleLayout>
@@ -109,6 +111,7 @@
       <slant>Normal</slant>
     </font>
   </theme>
+
   <desktops>
     <!-- this stuff is only used at startup, pagers allow you to change them
        during a session
@@ -128,6 +131,7 @@
     <!-- The number of milliseconds to show the popup for when switching
        desktops.  Set this to 0 to disable the popup. -->
   </desktops>
+
   <resize>
     <drawContents>yes</drawContents>
     <popupShow>NonPixel</popupShow>
@@ -144,6 +148,7 @@
          distance from bottom edge, or 'Center' -->
     </popupFixedPosition>
   </resize>
+
   <!-- You can reserve a portion of your screen where windows will not cover when
      they are maximized, or when they are initially placed.
      Many programs reserve space automatically, but you can use this in other
@@ -154,6 +159,7 @@
     <left>0</left>
     <right>0</right>
   </margins>
+
   <dock>
     <position>TopLeft</position>
     <!-- (Top|Bottom)(Left|Right|)|Top|Bottom|Left|Right|Floating -->
@@ -175,7 +181,6 @@
 
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
-
     <!-- Keybindings for desktop switching -->
     <keybind key="W-F1">
       <action name="Desktop">
@@ -230,6 +235,7 @@
     <keybind key="A-Tab">
       <action name="NextWindow"/>
     </keybind>
+
     <!-- Restart openbox -->
     <keybind key="W-r">
       <action name="Reconfigure"/>
@@ -455,6 +461,7 @@
     <!-- controls if icons appear in the client-list-(combined-)menu -->
     <manageDesktops>yes</manageDesktops>
   </menu>
+
   <applications>
     <!-- Adjust startup applications -->
     <application class="*">
@@ -464,4 +471,5 @@
       </position>
     </application>
   </applications>
+
 </openbox_config>
