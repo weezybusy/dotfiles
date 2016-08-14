@@ -75,12 +75,12 @@ fi
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # play radio
-air() {
+indie() {
         if [ "$(pidof mocp)" ]; then
-                mocp -l http://listen.ai-radio.org:8000/320.ogg
+                mocp -l http://65.19.131.163/entravision-indiemp3-ibc2
         else
                 mocp -S
-                mocp -l http://listen.ai-radio.org:8000/320.ogg
+                mocp -l http://65.19.131.163/entravision-indiemp3-ibc2
         fi
 }
 
