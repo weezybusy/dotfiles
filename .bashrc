@@ -92,24 +92,7 @@ temp() {
         echo $RES
 }
 
-mount() {
-        if [[ $1 == [a-z] ]]; then
-                sdx="sd$1"
-                n="1"
-                sdxn="$sdx$n"
-                udisksctl mount -b /dev/$sdxn
-        fi
-}
-
-unmount() {
-        if [[ $1 == [a-z] ]]; then
-                sdx="sd$1"
-                n="1"
-                sdxn="$sdx$n"
-                udisksctl unmount -b /dev/$sdxn
-        fi
-}
-
+# safely unmount usb
 poff() {
         if [[ $1 == [a-z] ]]; then
                 sdx="sd$1"
