@@ -24,7 +24,7 @@ alias python='python3'
 alias gdb='gdb -quiet'
 alias gdbt='gdbtui -q'
 alias wget='wget --content-disposition'
-alias findusb='sudo grep SCSI /var/log/messages | tail -5'
+alias findusb="sudo grep SCSI /var/log/messages | tail -5 | cut -d' ' -f1,2,3,9 | sort -r | nl -s\". \" -nln -w1"
 
 alias update='sudo apt-get update'
 alias upgrade='sudo apt-get update && sudo apt-get upgrade'

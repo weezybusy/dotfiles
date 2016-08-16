@@ -45,3 +45,6 @@ xft-rgba=rgb
 show-clock=true
 clock-format=%H:%M
 
+SETUP TTY FONT:
+---------------
+sudo dpkg-reconfigure console-setup
