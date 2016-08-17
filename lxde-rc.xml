@@ -275,15 +275,6 @@
         <command>galculator</command>
       </action>
     </keybind>
-    <keybind key="W-u">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>upgrade</name>
-        </startupnotify>
-        <command>xterm -e "sudo apt-get update; sudo apt-get upgrade; bash"</command>
-      </action>
-    </keybind>
     <!-- Logout session -->
     <keybind key="C-A-Delete">
       <action name="Execute">
@@ -323,10 +314,6 @@
     </keybind>
     <keybind key="W-Up">
       <action name="ToggleMaximizeFull"/>
-    </keybind>
-    <!-- Open window in fullscreen -->
-    <keybind key="W-Return">
-      <action name="ToggleFullscreen"/>
     </keybind>
     <!--keybindings for LXPanel -->
     <keybind key="A-F2">
