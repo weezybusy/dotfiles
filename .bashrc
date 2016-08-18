@@ -46,7 +46,7 @@ fi
 if [ "$color_prompt" = yes ]; then
         PS1='${debian_chroot:+($debian_chroot)}\[\033[00;33m\][\W]\[\033[00m\] '
 else
-        PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+        PS1='${debian_chroot:+($debian_chroot)}[\W] '
 fi
 unset color_prompt force_color_prompt
 
@@ -63,12 +63,7 @@ esac
 if [ -x /usr/bin/dircolors ]; then
         test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
         alias ls='ls --color=auto'
-        alias dir='dir --color=auto'
-        alias vdir='vdir --color=auto'
-
         alias grep='grep --color=auto'
-        alias fgrep='fgrep --color=auto'
-        alias egrep='egrep --color=auto'
 fi
 
 # colored GCC warnings and errors
@@ -84,7 +79,6 @@ indie() {
         fi
 }
 
-
 # check weather
 temp() {
         URL='http://www.accuweather.com/en/ua/kyiv/324505/weather-forecast/324505'
@@ -92,41 +86,10 @@ temp() {
         echo $RES
 }
 
-# safely unmount usb
-poff() {
-        if [[ $1 == [a-z] ]]; then
-                sdx="sd$1"
-                n="1"
-                sdxn="$sdx$n"
-                udisksctl unmount -b /dev/$sdxn && udisksctl power-off -b /dev/$sdx
-        fi
-}
-
 # timer
 timer() {
         echo 'mplayer ~/Templates/sounds/Bomb-timer.mp3 &> /dev/null' | at now + $1 min
 }
-
-# terminal colors
-if [ "$TERM" = "linux" ]; then
-        echo -en "\e]P0282828" #black
-        echo -en "\e]P8928374" #darkgrey
-        echo -en "\e]P1cc241d" #darkred
-        echo -en "\e]P9fb4934" #red
-        echo -en "\e]P298971a" #darkgreen
-        echo -en "\e]PAb8bb26" #green
-        echo -en "\e]P3d79921" #brown
-        echo -en "\e]PBfabd2f" #yellow
-        echo -en "\e]P4458588" #darkblue
-        echo -en "\e]PC83a598" #blue
-        echo -en "\e]P5b16286" #darkmagenta
-        echo -en "\e]PDd3869b" #magenta
-        echo -en "\e]P6689d6a" #darkcyan
-        echo -en "\e]PE8ec07c" #cyan
-        echo -en "\e]P789984" #lightgrey
-        echo -en "\e]PFebdbb2" #white
-        clear #for background artifacting
-fi
 
 if [ -f ~/.bash_aliases ]; then
         . ~/.bash_aliases
