@@ -70,12 +70,20 @@ fi
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # play radio
-indie() {
-        if [ "$(pidof mocp)" ]; then
-                mocp -l http://65.19.131.163/entravision-indiemp3-ibc2
-        else
+radio() {
+        indie="http://65.19.131.163/entravision-indiemp3-ibc2"
+        jazzy="http://tx.sharp-stream.com/http_live.php?i=jazzfmmobile.aac"
+
+        if ! (( $(pgrep -c "mocp") > 0 )); then
                 mocp -S
-                mocp -l http://65.19.131.163/entravision-indiemp3-ibc2
+        fi
+
+        if [ $1 == "indie" ]; then
+                mocp -l $indie
+        fi
+
+        if [ $1 == "jazzy" ]; then
+                mocp -l $jazzy
         fi
 }
 
