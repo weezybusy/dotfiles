@@ -37,7 +37,7 @@
     <primaryMonitor>1</primaryMonitor>
   </placement>
   <theme>
-    <name>Minimal</name>
+    <name>Onyx</name>
     <titleLayout>LMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -245,7 +245,7 @@
           <enabled>true</enabled>
           <name>Web Browser</name>
         </startupnotify>
-        <command>iceweasel</command>
+        <command>firefox-esr</command>
       </action>
     </keybind>
     <keybind key="W-t">
@@ -414,4 +414,12 @@
       </position>
     </application>
   </applications>
+  <mouse>
+    <dragThreshold>8</dragThreshold>
+    <screenEdgeWarpTime>400</screenEdgeWarpTime>
+    <doubleClickTime>200</doubleClickTime>
+    <context name="Titlebar">
+      <mousebind button="Left" action="DoubleClick"/>
+    </context>
+  </mouse>
 </openbox_config>
