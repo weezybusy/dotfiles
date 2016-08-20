@@ -301,6 +301,9 @@
         <direction>down</direction>
       </action>
     </keybind>
+    <keybind key="F11">
+       <action name="ToggleFullscreen"/>
+    </keybind>
     <!-- Lock Screen -->
     <keybind key="W-l">
       <action name="Execute">
@@ -877,5 +880,11 @@
 
   # end of the example
 -->
+    <application class="*">
+      <position force="no">
+        <x>center</x>
+        <y>center</y>
+      </position>
+    </application>
   </applications>
 </openbox_config>
