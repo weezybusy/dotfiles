@@ -120,7 +120,7 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>4</number>
+    <number>1</number>
     <firstdesk>1</firstdesk>
     <names>
       <!-- set names up here if you want to, like this:
@@ -343,15 +343,6 @@
           <name>Terminal</name>
         </startupnotify>
         <command>xterm</command>
-      </action>
-    </keybind>
-    <keybind key="A-F2">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Run</name>
-        </startupnotify>
-        <command>gmrun</command>
       </action>
     </keybind>
     <!-- Vertical tiling -->
