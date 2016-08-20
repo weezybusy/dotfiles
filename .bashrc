@@ -88,7 +88,7 @@ radio() {
 }
 
 # check weather
-temp() {
+weather() {
         URL='http://www.accuweather.com/en/ua/kyiv/324505/weather-forecast/324505'
         RES=$(wget -q -O- "$URL" | awk -F\' '/acm_RecentLocationsCarousel\.push/{ print $10 "° " $14 }' | head -1)
         echo $RES
