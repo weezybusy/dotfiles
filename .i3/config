@@ -168,6 +168,7 @@ bar {
 }
 
 hide_edge_borders both
+new_window 1pixel
 
 # Assigm programs to workspaces
 assign [class="Firefox"] $tag1
