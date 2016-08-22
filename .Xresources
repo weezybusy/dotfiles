@@ -47,3 +47,9 @@ xterm*color14: #8ec07c
 xterm*color7: #a89984
 ! bright_white
 xterm*color15: #ebdbb2
+
+Xft.dpi: 96
+Xft.antialias: true
+Xft.rgba: rgb
+Xft.hinting: true
+Xft.hintstyle: hintslight
