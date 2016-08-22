@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Onyx</name>
+    <name>Syscrash</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -884,25 +884,23 @@
   # end of the example
 -->
     <application class="*">
+      <decor>no</decor>
       <position force="no">
         <x>center</x>
         <y>center</y>
       </position>
     </application>
     <application name="Navigator">
-      <desktop>1</desktop>
-      <decor>no</decor>
       <maximized>true</maximized>
+      <desktop>1</desktop>
     </application>
     <application name="xterm">
-      <decor>no</decor>
       <maximized>true</maximized>
       <desktop>2</desktop>
     </application>
     <application name="pcmanfm">
-      <desktop>3</desktop>
-      <decor>no</decor>
       <maximized>true</maximized>
+      <desktop>3</desktop>
     </application>
   </applications>
 </openbox_config>
