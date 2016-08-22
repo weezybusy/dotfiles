@@ -127,7 +127,7 @@
       <name>TERM</name>
       <name>FILES</name>
     </names>
-    <popupTime>285</popupTime>
+    <popupTime>0</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
        desktops.  Set this to 0 to disable the popup. -->
   </desktops>
@@ -260,6 +260,9 @@
       <action name="Lower"/>
       <action name="FocusToBottom"/>
       <action name="Unfocus"/>
+    </keybind>
+    <keybind key="C-m" action="Drag">
+      <action name="Move"/>
     </keybind>
     <keybind key="A-space">
       <action name="ShowMenu">
