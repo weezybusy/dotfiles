@@ -120,13 +120,12 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>4</number>
+    <number>3</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>WEB</name>
       <name>TERM</name>
       <name>FILES</name>
-      <name>MUSIC</name>
     </names>
     <popupTime>285</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -889,6 +888,21 @@
         <x>center</x>
         <y>center</y>
       </position>
+    </application>
+    <application name="Navigator">
+      <desktop>1</desktop>
+      <decor>no</decor>
+      <maximized>true</maximized>
+    </application>
+    <application name="xterm">
+      <decor>no</decor>
+      <maximized>true</maximized>
+      <desktop>2</desktop>
+    </application>
+    <application name="pcmanfm">
+      <desktop>3</desktop>
+      <decor>no</decor>
+      <maximized>true</maximized>
     </application>
   </applications>
 </openbox_config>
