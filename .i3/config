@@ -161,21 +161,25 @@ bar {
 
 hide_edge_borders both
 
+# Assigm programs to workspaces
+assign [class="Firefox"] $tag1
+assign [class="Pcmanfm"] $tag3
+
+# Autostart programs
 exec xset s off
 exec xset -dpms
 exec xset s noblank
 exec compton
-#exec pcmanfm -d
+exec pcmanfm
+exec firefox-esr
+
 exec --no-startup-id feh --bg-fill ~/Pictures/wall/wallpaper.png
-exec --no-startup-id i3-msg 'workspace $tag1; exec firefox-esr'
 exec --no-startup-id i3-msg 'workspace $tag2; exec xterm'
-exec --no-startup-id i3-msg 'workspace $tag3; exec pcmanfm'
 
 bindsym $mod+F1 exec xbacklight -10
 bindsym $mod+F2 exec xbacklight +10
 bindsym $mod+F9 exec amixer -q set Master 5%- unmute
 bindsym $mod+F10 exec amixer -q set Master 5%+ unmute
+bindsym $mod+F11 exec amixer -q set Master toggle
 bindsym $mod+shift+x exec i3lock
 bindsym $mod+x exec /usr/bin/dm-tool lock
-
-assign [class="Firefox"] $tag1
