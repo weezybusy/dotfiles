@@ -199,30 +199,6 @@
         <to>4</to>
       </action>
     </keybind>
-    <keybind key="C-A-Left">
-      <action name="GoToDesktop">
-        <to>left</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="C-A-Right">
-      <action name="GoToDesktop">
-        <to>right</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="C-A-Up">
-      <action name="GoToDesktop">
-        <to>up</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="C-A-Down">
-      <action name="GoToDesktop">
-        <to>down</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
     <keybind key="S-A-Left">
       <action name="SendToDesktop">
         <to>left</to>
@@ -235,25 +211,10 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="S-A-Up">
-      <action name="SendToDesktop">
-        <to>up</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="S-A-Down">
-      <action name="SendToDesktop">
-        <to>down</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- Keybindings for windows -->
-    <keybind key="A-F4">
-      <action name="Close"/>
-    </keybind>
     <keybind key="C-q">
       <action name="Close"/>
     </keybind>
@@ -342,7 +303,7 @@
       </action>
     </keybind>
     <!-- Open main menu -->
-    <keybind key="A-F1">
+    <keybind key="W-m">
       <action name="Execute">
         <command>lxpanelctl menu</command>
       </action>
@@ -368,13 +329,13 @@
         <command>xcalc</command>
       </action>
     </keybind>
-    <keybind key="A-F2">
+    <keybind key="W-r">
       <action name="Execute">
         <command>lxpanelctl run</command>
       </action>
     </keybind>
     <!-- Vertical tiling -->
-    <keybind key="W-Left">
+    <keybind key="W-h">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <width>50%</width>
@@ -385,7 +346,7 @@
         <y>0</y>
       </action>
     </keybind>
-    <keybind key="W-Right">
+    <keybind key="W-l">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <width>50%</width>
@@ -396,36 +357,58 @@
         <y>0</y>
       </action>
     </keybind>
-    <!-- Restore window dimensions -->
-    <keybind key="W-Down">
+    <!-- Horizontal tiling -->
+    <keybind key="W-k">
       <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <height>50%</height>
+      </action>
+      <action name="MaximizeHorz"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+      </action>
     </keybind>
-    <keybind key="W-Up">
+    <keybind key="W-j">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <height>50%</height>
+      </action>
+      <action name="MaximizeHorz"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>-0</y>
+      </action>
+    </keybind>
+    <!-- Un/maximize windows -->
+    <keybind key="W-Return">
       <action name="ToggleMaximizeFull"/>
     </keybind>
+    <!-- Reconfigure and restart openbox -->
+    <keybind key="W-F11">
+      <action name="Reconfigure"/>
+    </keybind>
+    <keybind key="W-F12">
+      <action name="Restart"/>
+    </keybind>
     <!-- Sound controls -->
-    <keybind key="W-F9">
+    <keybind key="W-9">
       <action name="Execute">
         <command>amixer -q set Master 5%- unmute</command>
       </action>
     </keybind>
-    <keybind key="W-F10">
+    <keybind key="W-0">
       <action name="Execute">
         <command>amixer -q set Master 5%+ unmute</command>
       </action>
     </keybind>
-    <keybind key="W-F11">
-      <action name="Execute">
-        <command>amixer -q set Master toggle</command>
-      </action>
-    </keybind>
     <!-- Brightness controls -->
-    <keybind key="W-F1">
+    <keybind key="W-7">
       <action name="Execute">
         <command>xbacklight -10</command>
       </action>
     </keybind>
-    <keybind key="W-F2">
+    <keybind key="W-8">
       <action name="Execute">
         <command>xbacklight +10</command>
       </action>
