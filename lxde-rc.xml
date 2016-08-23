@@ -54,8 +54,8 @@
       S: shade (roll up/down)
       D: omnipresent (on all desktops).
   -->
-    <keepBorder>yes</keepBorder>
-    <animateIconify>yes</animateIconify>
+    <keepBorder>no</keepBorder>
+    <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>Droid Sans</name>
       <size>9</size>
@@ -881,6 +881,7 @@
       <desktop>1</desktop>
     </application>
     <application name="xterm">
+      <fullscreen>yes</fullscreen>
       <desktop>2</desktop>
     </application>
     <application name="pcmanfm">
