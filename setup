@@ -15,7 +15,12 @@ echo $((48*1024*1024)) > /proc/sys/vm/dirty_bytes
 
 TO:
 $ sudo vi /etc/rc.local
+-----------------------------------
 
+INSTALL APP TO RESTORE TMUX SESSIONS:
+-------------------------------------
+$ pip install --user tmuxp
+-------------------------------------
 
 TURN ON TOUCHPAD TAP:
 ---------------------
