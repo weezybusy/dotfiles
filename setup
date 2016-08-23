@@ -41,7 +41,7 @@ CHANGE LIGHTDM GREETER WALLPAPER:
 $ sudo vi /etc/lightdm/lightdm-gtk-greeter.conf
 
 OPTIONS:
-ckground=/home/weezy/Pictures/2.png
+ckground=/home/weezy/Pictures/wallpaper.png
 font-name=Droid Sans
 xft-antialias=true
 xft-dpi=96
@@ -55,13 +55,6 @@ SETUP TTY FONT:
 $ sudo dpkg-reconfigure console-setup
 ---------------
 
-REMAP CAPS TO SUPER
---------------------
-$ sudo vi /etc/default/keyboard
-add:
-XKBOPTIONS="caps:super"
---------------------
-
 FIX NETWORK MANAGER:
 --------------------
 $ sudo vi /etc/NetworkManager/NerworkManager.conf
@@ -72,7 +65,7 @@ SETUP WIFI:
 -----------
 Restrict the permissions of /etc/network/interfaces, to prevent pre-shared key (PSK) disclosure (alternatively use a separate config file such as /etc/network/interfaces.d/wlan0 on newer Debian versions):
 
-	# chmod 0600 /etc/network/interfaces
+# chmod 0600 /etc/network/interfaces
 
 Use the WPA passphrase to calculate the correct WPA PSK hash for your SSID by altering the following example:
 
@@ -80,28 +73,28 @@ Use the WPA passphrase to calculate the correct WPA PSK hash for your SSID by al
 
 If you don't put the passphrase on the command line, it will be prompted for. The above command gives the output:
 
-	network={
-        	ssid="myssid"
-        	#psk="my_very_secret_passphrase"
-        	psk=ccb290fd4fe6b22935cbae31449e050edd02ad44627b16ce0151668f5f53c01b
-	}
+network={
+        ssid="myssid"
+        #psk="my_very_secret_passphrase"
+        psk=ccb290fd4fe6b22935cbae31449e050edd02ad44627b16ce0151668f5f53c01b
+}
 
 you'll need to copy from "psk=" to the end of the line, to put in your /etc/network/interfaces file.
 
 Open /etc/network/interfaces in a text editor:
 
-	# sensible-editor /etc/network/interfaces
+# sensible-editor /etc/network/interfaces
 
 Define appropriate stanzas for your wireless interface, along with the SSID and PSK HASH. For example:
 
-	auto wlan0
-	iface wlan0 inet dhcp
-        	wpa-ssid myssid
-        	wpa-psk ccb290fd4fe6b22935cbae31449e050edd02ad44627b16ce0151668f5f53c01b
+auto wlan0
+iface wlan0 inet dhcp
+        wpa-ssid myssid
+        wpa-psk ccb290fd4fe6b22935cbae31449e050edd02ad44627b16ce0151668f5f53c01b
 
 The "auto" stanza will bring your interface up at system startup. If not desired, remove or comment this line.
 Save the file and exit the editor.
 
 Bring your interface up. This will start wpa_supplicant as a background process.
 
-	# ifup wlan0
+# ifup wlan0
