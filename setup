@@ -57,9 +57,16 @@ $ sudo dpkg-reconfigure console-setup
 
 REMAP CAPS TO SUPER
 --------------------
-	$ sudo vi /etc/default/keyboard
+$ sudo vi /etc/default/keyboard
 add:
-	XKBOPTIONS="caps:super"
+XKBOPTIONS="caps:super"
+--------------------
+
+FIX NETWORK MANAGER:
+--------------------
+$ sudo vi /etc/NetworkManager/NerworkManager.conf
+change managed=false to true
+--------------------
 
 SETUP WIFI:
 -----------
