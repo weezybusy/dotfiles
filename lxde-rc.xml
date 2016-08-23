@@ -123,10 +123,10 @@
     <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>1 WEB</name>
-      <name>2 TERM</name>
-      <name>3 FILES</name>
-      <name>4 OTHER</name>
+      <name>WEB</name>
+      <name>TERM</name>
+      <name>FILES</name>
+      <name>OTHER</name>
     </names>
     <popupTime>0</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -406,17 +406,17 @@
     <!-- Sound controls -->
     <keybind key="W-F9">
       <action name="Execute">
-        <command>amixer set Master 5%- unmute</command>
+        <command>amixer -q set Master 5%- unmute</command>
       </action>
     </keybind>
     <keybind key="W-F10">
       <action name="Execute">
-        <command>amixer set Master 5%+ unmute</command>
+        <command>amixer -q set Master 5%+ unmute</command>
       </action>
     </keybind>
     <keybind key="W-F11">
       <action name="Execute">
-        <command>amixer set Master toggle</command>
+        <command>amixer -q set Master toggle</command>
       </action>
     </keybind>
     <!-- Brightness controls -->
@@ -895,16 +895,16 @@
       </position>
     </application>
     <application name="Navigator">
-      <maximized>true</maximized>
       <desktop>1</desktop>
     </application>
     <application name="xterm">
-      <maximized>true</maximized>
       <desktop>2</desktop>
     </application>
     <application name="pcmanfm">
-      <maximized>true</maximized>
       <desktop>3</desktop>
+    </application>
+    <application name="deluge">
+      <desktop>4</desktop>
     </application>
   </applications>
 </openbox_config>
