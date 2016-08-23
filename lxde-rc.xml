@@ -426,6 +426,11 @@
     <screenEdgeWarpMouse>false</screenEdgeWarpMouse>
     <!-- Set this to TRUE to move the mouse pointer across the desktop when
        switching due to hitting the edge of the screen -->
+    <context name="Client">
+      <mousebind button="A-Left" action="Drag">
+        <action name="Move"/>
+      </mousebind>
+    </context>
     <context name="Frame">
       <mousebind button="A-Left" action="Press">
         <action name="Focus"/>
