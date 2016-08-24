@@ -16,7 +16,7 @@ windows:
   panes:
   - vi
   - focus: 'true'
-    shell_command: bash
+    shell_command: null
   start_directory: /media/weezy/work/playground/py
   window_name: PYTHON
 - layout: 7be5,151x41,0,0{84x41,0,0,4,66x41,85,0,5}
@@ -25,7 +25,7 @@ windows:
   panes:
   - vi
   - focus: 'true'
-    shell_command: bash
+    shell_command: null
   start_directory: /media/weezy/work/playground/c
   window_name: C
 - layout: b043,151x41,0,0,6
