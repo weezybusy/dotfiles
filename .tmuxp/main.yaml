@@ -1,33 +1,34 @@
 session_name: main
 windows:
 - focus: 'true'
-  layout: b03d,151x41,0,0,0
+  layout: 050a,151x41,0,0[151x20,0,0,7,151x20,0,21,1]
   options:
     automatic-rename: 'off'
   panes:
+  - weechat
   - focus: 'true'
     shell_command: null
-  start_directory: ~/
-  window_name: BASH
-- layout: fbd8,151x41,0,0{84x41,0,0,1,66x41,85,0,4}
+  start_directory: /home/weezy
+  window_name: STUFF
+- layout: 7bdc,151x41,0,0{84x41,0,0,2,66x41,85,0,3}
   options:
     automatic-rename: 'off'
   panes:
   - vi
   - focus: 'true'
-    shell_command: null
+    shell_command: bash
   start_directory: /media/weezy/work/playground/py
   window_name: PYTHON
-- layout: 7bdd,151x41,0,0{84x41,0,0,2,66x41,85,0,5}
+- layout: 7be5,151x41,0,0{84x41,0,0,4,66x41,85,0,5}
   options:
     automatic-rename: 'off'
   panes:
   - vi
   - focus: 'true'
-    shell_command: null
+    shell_command: bash
   start_directory: /media/weezy/work/playground/c
   window_name: C
-- layout: b040,151x41,0,0,3
+- layout: b043,151x41,0,0,6
   options:
     automatic-rename: 'off'
   panes:

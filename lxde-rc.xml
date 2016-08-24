@@ -303,7 +303,7 @@
       </action>
     </keybind>
     <!-- Open main menu -->
-    <keybind key="W-m">
+    <keybind key="W-Menu">
       <action name="Execute">
         <command>lxpanelctl menu</command>
       </action>
