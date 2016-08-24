@@ -99,6 +99,10 @@ timer() {
         echo 'mplayer ~/Templates/sounds/Bomb-timer.mp3 &> /dev/null' | at now + $1 min
 }
 
+yt() {
+        youtube-dl -q -o- $1 | mplayer -cache 8192 -
+}
+
 if [ -f ~/.bash_aliases ]; then
         . ~/.bash_aliases
 fi
