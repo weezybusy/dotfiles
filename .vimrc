@@ -10,7 +10,7 @@ set incsearch
 set nostartofline
 set number
 set relativenumber
-set textwidth=80
+set textwidth=79
 set colorcolumn=+1
 set nowrap
 set ruler
