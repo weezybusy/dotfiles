@@ -18,6 +18,8 @@ set showmatch
 set autoindent
 set cindent
 set expandtab
+au FileType html,xml,javascript,css setlocal ts=2 et sts=2 sw=2
+au FileType python setlocal ts=4 et sts=4 sw=4
 set autowrite
 set autoread
 set noswapfile 
