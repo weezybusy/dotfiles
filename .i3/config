@@ -91,16 +91,17 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 bar {
- colors {
-        background #1d2021
-        statusline #458588
-        separator #666666
+        colors {
+                background #1d2021
+                statusline #458588
+                separator #666666
 
-        focused_workspace  #1d2021 #d79921 #1d2021
-        active_workspace   #333333 #5f676a #ffffff
-        inactive_workspace #1d2021 #282828 #d79921
-        urgent_workspace   #2f343a #900000 #ffffff
-    }
+                focused_workspace  #1d2021 #d79921 #1d2021
+                active_workspace   #333333 #5f676a #ffffff
+                inactive_workspace #1d2021 #282828 #d79921
+                urgent_workspace   #2f343a #900000 #ffffff
+        }
+        position top
         status_command i3status -c ~/.i3status.conf
 }
 
@@ -117,7 +118,7 @@ exec compton
 exec pcmanfm
 exec firefox-esr
 
-exec --no-startup-id feh --bg-fill ~/Pictures/wall/wallpaper.png
+exec --no-startup-id feh --bg-fill ~/Pictures/wallpaper.png
 exec --no-startup-id i3-msg 'workspace $tag2; exec xterm'
 
 bindsym $mod+F1 exec xbacklight -10
