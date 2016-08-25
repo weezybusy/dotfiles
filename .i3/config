@@ -117,15 +117,11 @@ hide_edge_borders both
 new_window pixel 1
 
 # autostart
-exec xset s off
-exec xset -dpms
-exec xset s noblank
 exec compton
-exec --no-startup-id feh --bg-fill ~/Pictures/wallpaper.png
-exec pcmanfm -d
-exec --no-startup-id i3-msg 'workspace $tag2; exec uxterm'
-exec --no-startup-id i3-msg 'workspace $tag1; exec firefox-esr'
+exec xscreensaver -no-splash
 exec "sleep 3 && setxkbmap -layout us,ru -option grp:caps_toggle -variant winkeys"
+exec --no-startup-id feh --bg-fill ~/Pictures/.wallpapers/8.png
+exec pcmanfm -d
 
 # exit options
 set $Locker i3lock -c '#000000' -u -d && sleep 1
@@ -144,4 +140,4 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 
-bindsym $mod+Pause mode "$mode_system"
+bindsym Control+$mod+Delete mode "$mode_system"
