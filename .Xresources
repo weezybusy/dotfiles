@@ -7,8 +7,16 @@ xterm*vt100.initialFont: 5
 xterm*selectToClipboard: true
 xterm*charClass:         33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
 xterm*metaSendsEscape:   true
-xterm*allowBoldFonts:    false
+XTerm*cursorBlink:       true
+!xterm*allowBoldFonts:    false
+! Forbid bold font faces; bold type is light blue.
+XTerm*colorBDMode: true
+XTerm*colorBD: rgb:82/a4/d3
+! Do not underscore text, underlined text is white.
+XTerm*colorULMode: true
+XTerm*colorUL: rgb:e4/e4/e4
 
+xterm*borderWidth: 0
 xterm.internalBorder:    0
 xterm.externalBorder:    0
 
