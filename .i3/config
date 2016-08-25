@@ -42,7 +42,7 @@ for_window [class="Qalculate-gtk"] floating enable, border normal
 # workspaces
 set $tag1 "1:WWW"
 set $tag2 "2:STUFF"
-set $tag4 "3:CODE"
+set $tag3 "3:CODE"
 
 bindsym $mod+1 workspace $tag1
 bindsym $mod+2 workspace $tag2
@@ -91,6 +91,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# status bar settings
 bar {
         colors {
                 background #1d2021
@@ -115,20 +116,21 @@ client.urgent               #282828 #cc241d #282828
 hide_edge_borders both
 new_window pixel 1
 
-assign [class="Firefox"] $tag1
-
+# autostart
 exec xset s off
 exec xset -dpms
 exec xset s noblank
 exec compton
 exec --no-startup-id feh --bg-fill ~/Pictures/wallpaper.png
 exec pcmanfm -d
-exec firefox-esr
 exec --no-startup-id i3-msg 'workspace $tag2; exec uxterm'
+exec --no-startup-id i3-msg 'workspace $tag1; exec firefox-esr'
 exec "sleep 3 && setxkbmap -layout us,ru -option grp:caps_toggle -variant winkeys"
 
+# exit options
 set $Locker i3lock -c '#000000' -u -d && sleep 1
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
+
 mode "$mode_system" {
     bindsym l exec --no-startup-id $Locker, mode "default"
     bindsym e exec --no-startup-id i3-msg exit, mode "default"
