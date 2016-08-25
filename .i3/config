@@ -30,6 +30,13 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
+bindsym --release Print exec --no-startup-id scrot
+bindsym --release Shift+Print exec --no-startup-id scrot -s
+
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="task_dialog"] floating enable
+for_window [class="(?i)mplayer"] floating enable
+
 set $tag1 "1:WWW"
 set $tag2 "2:STUFF"
 set $tag3 "3:PYTHON"
