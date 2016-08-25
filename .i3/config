@@ -30,6 +30,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
+# print screen
 bindsym --release Print exec --no-startup-id scrot
 bindsym --release Shift+Print exec --no-startup-id scrot -s
 
@@ -38,6 +39,7 @@ for_window [window_role="task_dialog"] floating enable
 for_window [class="(?i)mplayer"] floating enable
 for_window [class="Qalculate-gtk"] floating enable, border normal
 
+# workspaces
 set $tag1 "1:WWW"
 set $tag2 "2:STUFF"
 set $tag4 "3:CODE"
@@ -68,8 +70,11 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you want to exit i3?' -b 'Yes, exit i3' 'i3-msg exit'"
 
+# brightness
 bindsym $mod+F1 exec xbacklight -10
 bindsym $mod+F2 exec xbacklight +10
+
+# sound
 bindsym $mod+F9 exec amixer -q set Master 5%- unmute
 bindsym $mod+F10 exec amixer -q set Master 5%+ unmute
 bindsym $mod+F11 exec amixer -q set Master toggle
@@ -120,6 +125,7 @@ exec --no-startup-id feh --bg-fill ~/Pictures/wallpaper.png
 exec pcmanfm -d
 exec firefox-esr
 exec --no-startup-id i3-msg 'workspace $tag2; exec uxterm'
+exec "sleep 3 && setxkbmap -layout us,ru -option grp:caps_toggle -variant winkeys"
 
 set $Locker i3lock -c '#000000' -u -d && sleep 1
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
