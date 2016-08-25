@@ -6,7 +6,7 @@ floating_modifier $mod
 
 bindsym $mod+Return exec i3-sensible-terminal
 bindsym Control+k kill
-bindsym $mod+d exec i3-dmenu-desktop --dmenu="dmenu -b -nb '#1d2021' -nf '#d79921' -sb '#d79921' -sf '#1d2021'"
+bindsym $mod+d exec dmenu_run -b -i
 
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -117,11 +117,11 @@ hide_edge_borders both
 new_window pixel 1
 
 # autostart
-exec compton
-exec xscreensaver -no-splash
-exec "sleep 3 && setxkbmap -layout us,ru -option grp:caps_toggle -variant winkeys"
+exec --no-startup-id compton
+exec --no-startup-id xscreensaver -no-splash
+exec --no-startup-id "sleep 3 && setxkbmap -layout us,ru -option grp:caps_toggle -variant winkeys"
 exec --no-startup-id feh --bg-fill ~/Pictures/.wallpapers/8.png
-exec pcmanfm -d
+exec --no-startup-id pcmanfm -d
 
 # exit options
 set $Locker i3lock -c '#000000' -u -d && sleep 1
