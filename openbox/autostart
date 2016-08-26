@@ -1,8 +1,8 @@
 DESKTOP_ENV="OPENBOX"
-
-feh --bg-fill /home/weezy/Pictures/.wallpapers/8.png &
+xset -dpms &
+xset s noblank &
+xset s off &
 compton &
 pcmanfm -d &
-xscreensaver -no-splash &
 firefox-esr &
 uxterm &
