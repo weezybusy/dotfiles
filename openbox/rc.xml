@@ -125,7 +125,7 @@
     <names>
       <name>WEB</name>
       <name>TERM</name>
-      <name>FILES</name>
+      <name>CODE</name>
       <name>OTHER</name>
     </names>
     <popupTime>375</popupTime>
@@ -867,7 +867,6 @@
   # end of the example
 -->
     <application class="*">
-      <decor>no</decor>
       <position force="no">
         <x>center</x>
         <y>center</y>
@@ -875,13 +874,6 @@
     </application>
     <application name="Navigator">
       <desktop>1</desktop>
-    </application>
-    <application name="xterm">
-      <fullscreen>yes</fullscreen>
-      <desktop>2</desktop>
-    </application>
-    <application name="pcmanfm">
-      <desktop>3</desktop>
     </application>
     <application name="deluge">
       <desktop>4</desktop>
