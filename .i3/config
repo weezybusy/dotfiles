@@ -88,8 +88,18 @@ mode "resize" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
-
 bindsym $mod+r mode "resize"
+
+mode "apps" {
+        bindsym w exec firefox
+        bindsym f exec pcmanfm
+        bindsym t exec uxterm
+        bindsym c qcalculate-gtk
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+bindsym $mod+p mode "apps"
 
 # status bar settings
 bar {
