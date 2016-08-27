@@ -368,11 +368,9 @@
 
     <!-- Maximize windows -->
     <keybind key="A-Return">
-      <action name="Maximize"/>
+      <action name="ToggleMaximizeFull"/>
     </keybind>
-    <keybind key="A-S-Return">
-      <action name="Unmaximize"/>
-    </keybind>
+
 
     <!-- Reconfigure and restart openbox -->
     <keybind key="A-F11">
@@ -913,6 +911,9 @@
     </application>
     <application name="Navigator">
       <desktop>1</desktop>
+    </application>
+    <application name="xterm">
+      <decor>no</decor>
     </application>
   </applications>
 </openbox_config>
