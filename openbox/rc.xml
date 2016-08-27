@@ -261,6 +261,17 @@
         <menu>client-menu</menu>
       </action>
     </keybind>
+    <!-- Cycle through all workspaces -->
+    <keybind key="W-Tab">
+      <action name="NextWindow">
+        <allDesktops>yes</allDesktops>
+      </action>
+    </keybind>
+    <keybind key="W-S-Tab">
+      <action name="PreviousWindow">
+        <allDesktops>yes</allDesktops>
+      </action>
+    </keybind>
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
       <action name="NextWindow">
@@ -273,17 +284,6 @@
     </keybind>
     <keybind key="A-S-Tab">
       <action name="PreviousWindow">
-        <finalactions>
-          <action name="Focus"/>
-          <action name="Raise"/>
-          <action name="Unshade"/>
-        </finalactions>
-      </action>
-    </keybind>
-    <keybind key="C-A-Tab">
-      <action name="NextWindow">
-        <panels>yes</panels>
-        <desktop>yes</desktop>
         <finalactions>
           <action name="Focus"/>
           <action name="Raise"/>
@@ -317,7 +317,7 @@
     </action>
     </keybind>
     <!-- Vertical tiling -->
-    <keybind key="A-h">
+    <keybind key="W-h">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <width>50%</width>
@@ -328,7 +328,7 @@
         <y>0</y>
       </action>
     </keybind>
-    <keybind key="A-l">
+    <keybind key="W-l">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <width>50%</width>
@@ -340,7 +340,7 @@
       </action>
     </keybind>
     <!-- Horizontal tiling -->
-    <keybind key="A-k">
+    <keybind key="W-k">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <height>50%</height>
@@ -351,7 +351,7 @@
         <y>0</y>
       </action>
     </keybind>
-    <keybind key="A-j">
+    <keybind key="W-j">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <height>50%</height>
@@ -363,8 +363,18 @@
       </action>
     </keybind>
     <!-- Maximize windows -->
-    <keybind key="A-Return">
+    <keybind key="W-Return">
       <action name="ToggleMaximizeFull"/>
+    </keybind>
+    <!-- Restore window -->
+    <keybind key="W-r">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>center</x>
+        <y>center</y>
+        <height>60%</height>
+        <width>50%</width>
+      </action>
     </keybind>
     <!-- Reconfigure and restart openbox -->
     <keybind key="A-F11">
@@ -387,6 +397,11 @@
     <keybind key="A-t">
       <action name="Execute">
         <command>uxterm</command>
+      </action>
+    </keybind>
+    <keybind key="A-c">
+      <action name="Execute">
+        <command>qalculate-gtk</command>
       </action>
     </keybind>
     <keybind key="A-r">
