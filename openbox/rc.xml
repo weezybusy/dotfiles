@@ -403,12 +403,12 @@
     <!-- Volume -->
     <keybind key="A-F9">
       <action name="Execute">
-        <command>amixer -q set Master 5%- unmute</command>
+        <command>amixer -q set PCM 5%- unmute</command>
       </action>
     </keybind>
     <keybind key="A-F10">
       <action name="Execute">
-        <command>amixer -q set Master 5%+ unmute</command>
+        <command>amixer -q set PCM 5%+ unmute</command>
       </action>
     </keybind>
     <!-- Brightness -->
