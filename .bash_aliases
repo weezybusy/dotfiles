@@ -2,6 +2,7 @@
 alias valgrind='valgrind --tool=memcheck --leak-check=full --show-reachable=yes'
 alias tmux='tmux -2'
 alias cc='cc -std=c99 -Wall'
+alias wget='wget --content-disposition'
 
 # utils
 alias google='python3 ~/Templates/utils/google.py'
