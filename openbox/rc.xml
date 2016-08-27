@@ -401,23 +401,23 @@
       </action>
     </keybind>
     <!-- Volume -->
-    <keybind key="A-F9">
+    <keybind key="F7">
       <action name="Execute">
         <command>amixer -q set PCM 5%- unmute</command>
       </action>
     </keybind>
-    <keybind key="A-F10">
+    <keybind key="F8">
       <action name="Execute">
         <command>amixer -q set PCM 5%+ unmute</command>
       </action>
     </keybind>
     <!-- Brightness -->
-    <keybind key="A-F7">
+    <keybind key="F9">
       <action name="Execute">
         <command>xbacklight -10</command>
       </action>
     </keybind>
-    <keybind key="A-F8">
+    <keybind key="F10">
       <action name="Execute">
         <command>xbacklight +10</command>
       </action>
