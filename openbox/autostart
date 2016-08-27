@@ -1,8 +1,3 @@
-DESKTOP_ENV="OPENBOX"
-xset -dpms &
-xset s noblank &
-xset s off &
-compton &
+xset s off -dpms &
 pcmanfm -d &
-firefox-esr &
-uxterm &
+compton &

@@ -118,4 +118,4 @@ if ! shopt -oq posix; then
         fi
 fi
 
-setxkbmap -option grp:switch,grp:alt_shift_toggle,grp_led:scroll us,ru
+# setxkbmap -option grp:switch,grp:alt_shift_toggle,grp_led:scroll us,ru
