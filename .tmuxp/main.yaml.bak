@@ -1,24 +1,25 @@
 session_name: main
 windows:
 - focus: 'true'
-  layout: b03f,151x41,0,0,2
+  layout: 050a,151x41,0,0[151x20,0,0,7,151x20,0,21,1]
   options:
     automatic-rename: 'off'
   panes:
+  - weechat
   - focus: 'true'
     shell_command: null
   start_directory: /home/weezy
   window_name: STUFF
-- layout: f200,151x41,0,0{83x41,0,0,3,67x41,84,0,4}
+- layout: 7bdc,151x41,0,0{84x41,0,0,2,66x41,85,0,3}
   options:
     automatic-rename: 'off'
   panes:
+  - vi
   - focus: 'true'
-    shell_command: vi
-  - null
+    shell_command: null
   start_directory: /media/weezy/work/playground/py
   window_name: PYTHON
-- layout: f209,151x41,0,0{83x41,0,0,5,67x41,84,0,6}
+- layout: 7be5,151x41,0,0{84x41,0,0,4,66x41,85,0,5}
   options:
     automatic-rename: 'off'
   panes:
@@ -27,7 +28,7 @@ windows:
     shell_command: null
   start_directory: /media/weezy/work/playground/c
   window_name: C
-- layout: b044,151x41,0,0,7
+- layout: b043,151x41,0,0,6
   options:
     automatic-rename: 'off'
   panes:
@@ -35,11 +36,3 @@ windows:
     shell_command: mocp
   start_directory: /home/weezy
   window_name: MUSIC
-- layout: 584f,151x41,0,0,10
-  options:
-    automatic-rename: 'off'
-  panes:
-  - focus: 'true'
-    shell_command: weechat
-  start_directory: /home/weezy
-  window_name: IRC
