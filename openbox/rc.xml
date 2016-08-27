@@ -118,13 +118,12 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>4</number>
+    <number>2</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>WEB</name>
       <name>TERM</name>
-      <name>CODE</name>
-      <name>OTHER</name>
+      <name>(Unnamed desktop)</name>
     </names>
     <popupTime>275</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -317,7 +316,6 @@
       <action name="ToggleFullscreen">
     </action>
     </keybind>
-
     <!-- Vertical tiling -->
     <keybind key="A-h">
       <action name="UnmaximizeFull"/>
@@ -341,7 +339,6 @@
         <y>0</y>
       </action>
     </keybind>
-
     <!-- Horizontal tiling -->
     <keybind key="A-k">
       <action name="UnmaximizeFull"/>
@@ -365,13 +362,10 @@
         <y>-0</y>
       </action>
     </keybind>
-
     <!-- Maximize windows -->
     <keybind key="A-Return">
       <action name="ToggleMaximizeFull"/>
     </keybind>
-
-
     <!-- Reconfigure and restart openbox -->
     <keybind key="A-F11">
       <action name="Reconfigure"/>
@@ -379,7 +373,6 @@
     <keybind key="A-F12">
       <action name="Restart"/>
     </keybind>
-
     <!-- Keybindings for running applications -->
     <keybind key="A-w">
       <action name="Execute">
@@ -401,14 +394,12 @@
         <command>gmrun</command>
       </action>
     </keybind>
-
     <!-- Openbox menu -->
     <keybind key="A-m">
       <action name="ShowMenu">
         <menu>root-menu</menu>
       </action>
     </keybind>
-
     <!-- Volume -->
     <keybind key="A-F9">
       <action name="Execute">
@@ -420,7 +411,6 @@
         <command>amixer -q set Master 5%+ unmute</command>
       </action>
     </keybind>
-
     <!-- Brightness -->
     <keybind key="A-F7">
       <action name="Execute">
@@ -432,14 +422,12 @@
         <command>xbacklight +10</command>
       </action>
     </keybind>
-
     <!-- Launch scrot when Print is pressed -->
     <keybind key="Print">
       <action name="Execute">
         <command>scrot</command>
       </action>
     </keybind>
-
     <!-- Take a screenshot of the current window with scrot when Alt+Print are pressed -->
     <keybind key="A-Print">
       <action name="Execute">
