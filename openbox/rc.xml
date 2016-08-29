@@ -40,7 +40,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Clearlooks</name>
+    <name>Nightmare-03</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -409,6 +409,11 @@
         <command>gmrun</command>
       </action>
     </keybind>
+    <keybind key="F4">
+      <action name="Execute">
+        <command>mocp -G</command>
+      </action>
+    </keybind>
     <!-- Openbox menu -->
     <keybind key="A-m">
       <action name="ShowMenu">
@@ -429,12 +434,12 @@
     <!-- Brightness -->
     <keybind key="F9">
       <action name="Execute">
-        <command>xbacklight -10</command>
+        <command>xbacklight -5</command>
       </action>
     </keybind>
     <keybind key="F10">
       <action name="Execute">
-        <command>xbacklight +10</command>
+        <command>xbacklight +5</command>
       </action>
     </keybind>
     <!-- Launch scrot when Print is pressed -->

@@ -94,6 +94,11 @@ weather() {
         echo $RES
 }
 
+# convert spaces in file name to underscores
+underscore() {
+        find . -type f -name "* *.$1" -exec bash -c 'mv "$0" "${0// /_}"' {} \;
+}
+
 # timer
 timer() {
         echo 'mplayer ~/Templates/sounds/Bomb-timer.mp3 &> /dev/null' | at now + $1 min

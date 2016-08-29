@@ -1,6 +1,7 @@
 session_name: WEEZY
 windows:
-- layout: a057,151x41,0,0{75x41,0,0,1,75x41,76,0[75x20,76,0,8,75x20,76,21,9]}
+- focus: 'true'
+  layout: 2050,151x41,0,0{75x41,0,0,1,75x41,76,0[75x20,76,0,2,75x20,76,21,3]}
   options:
     automatic-rename: 'off'
   panes:
@@ -10,29 +11,12 @@ windows:
   - htop
   start_directory: /home/weezy
   window_name: STUFF
-- layout: 71fc,151x41,0,0{83x41,0,0,2,67x41,84,0,3}
+- layout: 7205,151x41,0,0{83x41,0,0,4,67x41,84,0,5}
   options:
     automatic-rename: 'off'
   panes:
   - focus: 'true'
     shell_command: null
   - null
-  start_directory: /media/weezy/work/playground/py
-  window_name: PYTHON
-- layout: 584f,151x41,0,0,10
-  options:
-    automatic-rename: 'off'
-  panes:
-  - focus: 'true'
-    shell_command: null
-  start_directory: /home/weezy
-  window_name: C
-- focus: 'true'
-  layout: 5850,151x41,0,0,11
-  options:
-    automatic-rename: 'off'
-  panes:
-  - focus: 'true'
-    shell_command: null
-  start_directory: /home/weezy
-  window_name: IRC
+  start_directory: /media/weezy/work/playground
+  window_name: CODE
