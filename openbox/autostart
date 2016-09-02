@@ -1,4 +1,5 @@
 xset s off -dpms &
 pcmanfm -d &
 compton &
-feh --bg-fill /home/weezy/Pictures/.wallpapers/planets.png
+feh --bg-fill /home/weezy/Pictures/.wallpapers/planets.png &
+setxkbmap -option caps:swapescape &
