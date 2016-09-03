@@ -269,7 +269,7 @@ SyncPlaylist = yes
 
 # Use ASCII rather than graphic characters for drawing lines.  This
 # helps on some terminals.
-ASCIILines = yes
+#ASCIILines = yes
 
 # FastDirs, these allow you to jump directly to a directory, the key
 # bindings are in the keymap file.
