@@ -263,6 +263,12 @@
         <command>scrot -s</command>
       </action>
     </keybind>
+    <!-- Launch scrot when Print is pressed -->
+    <keybind key="Print">
+      <action name="Execute">
+        <command>scrot</command>
+      </action>
+    </keybind>
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
       <action name="NextWindow">
@@ -411,12 +417,6 @@
     <keybind key="F10">
       <action name="Execute">
         <command>xbacklight +5</command>
-      </action>
-    </keybind>
-    <!-- Launch scrot when Print is pressed -->
-    <keybind key="Print">
-      <action name="Execute">
-        <command>scrot</command>
       </action>
     </keybind>
   </keyboard>
