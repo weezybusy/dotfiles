@@ -300,7 +300,7 @@
   <!-- Keybindings for running applications -->
   <keybind key="A-w">
     <action name="Execute">
-      <command>/usr/bin/google-chrome</command>
+      <command>firefox</command>
     </action>
   </keybind>
   <keybind key="A-t">
