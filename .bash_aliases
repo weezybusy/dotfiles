@@ -6,6 +6,7 @@ alias wget='wget --content-disposition'
 alias python='python3'
 alias pip='pip3'
 alias uscore='python3 ~/Templates/utils/underscore.py'
+alias ls='ls -F'
 
 # utils
 alias google='python3 ~/Templates/utils/google.py'
