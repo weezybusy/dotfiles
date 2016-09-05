@@ -1,14 +1,12 @@
 session_name: WEEZY
 windows:
 - focus: 'true'
-  layout: 2050,151x41,0,0{75x41,0,0,1,75x41,76,0[75x20,76,0,2,75x20,76,21,3]}
+  layout: b03e,151x41,0,0,1
   options:
     automatic-rename: 'off'
   panes:
   - focus: 'true'
     shell_command: null
-  - mocp
-  - htop
   start_directory: /home/weezy
   window_name: STUFF
 - layout: 7205,151x41,0,0{83x41,0,0,4,67x41,84,0,5}
