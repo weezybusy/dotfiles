@@ -16,5 +16,5 @@ windows:
   - focus: 'true'
     shell_command: null
   - null
-  start_directory: /media/weezy/work/playground
+  start_directory: /mnt/work/playground
   window_name: CODE

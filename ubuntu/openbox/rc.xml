@@ -308,12 +308,12 @@
     <action name="Execute"><command>scrot</command></action>
   </keybind>
   <!-- Sound controls -->
-  <keybind key="W-9">
+  <keybind key="F7">
     <action name="Execute">
       <command>amixer set Master 5%- unmute</command>
     </action>
   </keybind>
-  <keybind key="W-0">
+  <keybind key="F8">
     <action name="Execute">
       <command>amixer set Master 5%+ unmute</command>
     </action>
