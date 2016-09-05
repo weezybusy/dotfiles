@@ -307,6 +307,28 @@
   <keybind key="Print">
     <action name="Execute"><command>scrot</command></action>
   </keybind>
+  <!-- Sound controls -->
+  <keybind key="W-9">
+    <action name="Execute">
+      <command>amixer set Master 5%- unmute</command>
+    </action>
+  </keybind>
+  <keybind key="W-0">
+    <action name="Execute">
+      <command>amixer set Master 5%+ unmute</command>
+    </action>
+  </keybind>
+  <!-- Brightness controls -->
+  <keybind key="F9">
+    <action name="Execute">
+      <command>xbacklight -10</command>
+    </action>
+  </keybind>
+  <keybind key="F10">
+    <action name="Execute">
+      <command>xbacklight +10</command>
+    </action>
+  </keybind>
 </keyboard>
 
 <mouse>
