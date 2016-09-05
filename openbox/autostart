@@ -2,4 +2,3 @@ xset s off -dpms &
 pcmanfm -d &
 compton &
 setxkbmap -option caps:swapescape &
-feh --bg-fill ~/Pictures/.wallpapers/8.png &
