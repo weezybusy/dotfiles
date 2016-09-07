@@ -1,4 +1,0 @@
-xset s off -dpms &
-pcmanfm -d &
-compton &
-setxkbmap -option caps:swapescape &
