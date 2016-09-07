@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Lubuntu-small</name>
+    <name>adwaita-ob</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -54,8 +54,8 @@
       S: shade (roll up/down)
       D: omnipresent (on all desktops).
   -->
-    <keepBorder>yes</keepBorder>
-    <animateIconify>yes</animateIconify>
+    <keepBorder>no</keepBorder>
+    <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>Ubuntu Mono</name>
       <size>10</size>
@@ -334,17 +334,15 @@
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo"><x>0</x><y>-0</y><width>100%</width><height>50%</height></action>
     </keybind>
-
     <!-- Restore window -->
     <keybind key="W-r">
       <action name="MoveResizeTo">
         <x>center</x>
         <y>center</y>
-	<height>600</height>
-	<width>800</width>
+        <height>600</height>
+        <width>800</width>
       </action>
     </keybind>
-
     <!-- Keybindings for running applications -->
     <keybind key="A-w">
       <action name="Execute">
