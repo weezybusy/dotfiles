@@ -266,7 +266,7 @@ XTermTheme = "/home/weezy/.moc/themes/black_theme"
 #NonUTFXterm = no
 
 # Remember the playlist after exit?
-#SavePlaylist = yes
+SavePlaylist = yes
 
 # When using more than one client (interface) at a time, do they share
 # the playlist?

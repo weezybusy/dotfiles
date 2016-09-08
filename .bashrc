@@ -70,21 +70,20 @@ fi
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # play radio
-radio() {
-        indie="http://65.19.131.163/entravision-indiemp3-ibc2"
-        jazzy="http://tx.sharp-stream.com/http_live.php?i=jazzfmmobile.aac"
-
+indie() {
+        indie="/home/weezy/Music/radio/indie.m3u"
         if ! (( $(pgrep -c "mocp") > 0 )); then
                 mocp -S
         fi
+        mocp -cap $indie
+}
 
-        if [ $1 == "indie" ]; then
-                mocp -l $indie
+jazzy() {
+        jazzy="/home/weezy/Music/radio/jazzy.m3u"
+        if ! (( $(pgrep -c "mocp") > 0 )); then
+                mocp -S
         fi
-
-        if [ $1 == "jazzy" ]; then
-                mocp -l $jazzy
-        fi
+        mocp -cap $jazzy
 }
 
 # check weather
