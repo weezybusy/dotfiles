@@ -342,6 +342,11 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
+    <keybind key="A-p">
+      <action name="Execute">
+        <command>lxterminal -e "vim -c 'colorscheme Tomorrow'"</command>
+      </action>
+    </keybind>
     <keybind key="A-w">
       <action name="Execute">
         <command>firefox</command>
