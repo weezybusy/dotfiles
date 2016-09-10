@@ -1,4 +1,0 @@
-xset s off -dpms &
-compton &
-setxkbmap -option caps:swapescape &
-feh --bg-fill ~/Pictures/colors.jpg &
