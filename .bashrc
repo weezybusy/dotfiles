@@ -121,4 +121,5 @@ if ! shopt -oq posix; then
                 . /etc/bash_completion
         fi
 fi
-setxkbmap "us,ru" ",winkeys" "grp:alt_caps_toggle"
+#setxkbmap "us,ru" ",winkeys" "grp:alt_caps_toggle"
+setxkbmap -option caps:swapescape
