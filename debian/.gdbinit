@@ -1,4 +1,4 @@
-#directory /usr/src/glibc/glibc-2.19/elf
+directory /usr/src/glibc/glibc-2.19/elf
 set print pretty on
 set print union on
 set print array on
