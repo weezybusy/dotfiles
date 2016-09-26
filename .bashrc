@@ -94,18 +94,18 @@ weather() {
 }
 
 # convert spaces in file name to underscores
-underscore() {
-        find . -type f -name "* *.$1" -exec bash -c 'mv "$0" "${0// /_}"' {} \;
-}
-
-# timer
-timer() {
-        echo 'mplayer ~/Templates/sounds/Bomb-timer.mp3 &> /dev/null' | at now + $1 min
-}
-
-yt() {
-        youtube-dl -q -o- $1 | mplayer -cache 8192 -
-}
+#underscore() {
+#        find . -type f -name "* *.$1" -exec bash -c 'mv "$0" "${0// /_}"' {} \;
+#}
+#
+## timer
+#timer() {
+#        echo 'mplayer ~/Templates/sounds/Bomb-timer.mp3 &> /dev/null' | at now + $1 min
+#}
+#
+#yt() {
+#        youtube-dl -q -o- $1 | mplayer -cache 8192 -
+#}
 
 if [ -f ~/.bash_aliases ]; then
         . ~/.bash_aliases
@@ -122,4 +122,4 @@ if ! shopt -oq posix; then
         fi
 fi
 #setxkbmap "us,ru" ",winkeys" "grp:alt_caps_toggle"
-setxkbmap -option caps:swapescape
+#setxkbmap -option caps:swapescape
