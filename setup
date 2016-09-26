@@ -113,3 +113,56 @@ full-screen-api.transition-duration.enter 0 0
 full-screen-api.transition-duration.leave 0 0
 full-screen-api.warning.timeout 0
 browser.sessionstore.interval 1800000
+
+MINILDNA:
+------------------------------------------------------------
+Configuration Locally (per user)
+
+Disable the global daemon:
+
+        sudo service minidlna stop
+        sudo update-rc.d minidlna disable
+
+Create the necessary local files and directories as regular user and edit the configuration:
+
+        mkdir -p ~/.minidlna/cache
+        cd ~/.minidlna
+        cp /etc/minidlna.conf .
+        vim minidlna.conf
+
+Configure as you would globally above but these definitions need to be defined locally:
+
+        db_dir=/home/$USER/.minidlna/cache
+        log_dir=/home/$USER/.minidlna                                                    
+
+To start the daemon locally:
+
+        minidlna -f /home/$USER/.minidlna/minidlna.conf -P /home/$USER/.minidlna/minidlna.pid
+
+In recent ubuntu versions, please replace minidlna with minidlnad.
+
+        minidlnad -f /home/$USER/.minidlna/minidlna.conf -P /home/$USER/.minidlna/minidlna.pid
+
+To stop the local daemon:
+
+        xargs kill </home/$USER/.minidlna/minidlna.pid
+
+To rebuild the database:
+
+        minidlnad -f /home/$USER/.minidlna/minidlna.conf -R
+
+To have minidlna load at startup, create the file ~/.config/autostart/minidlna.desktop:
+
+        [Desktop Entry]
+        Encoding=UTF-8
+        Type=Application
+        Name=MiniDLNA
+        Comment=Server to stream media over network
+        Exec=minidlna -f /home/$USER/.minidlna/minidlna.conf -P /home/$USER/.minidlna/minidlna.pid
+        StartupNotify=false
+        Terminal=false
+        Hidden=false
+
+Increase the number for the system:
+
+        /etc/sysctl.conf Add: "fs.inotify.max_user_watches=65536" in a blank line by itself. 
