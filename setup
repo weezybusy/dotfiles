@@ -1,7 +1,7 @@
 SETUP CRONTAB:
 --------------
 # backup work
-0 23 * * * rsync -urv --delete --exclude='/lost+found' /media/weezy/work/* /media/weezy/stuff/work
+0 23 * * * rsync -urv --delete --exclude='/lost+found' /media/$USER/work/* /media/$USER/stuff/work
 
 # alarm
 0 6 * * * ~/Templates/alarm/wakeup
@@ -19,7 +19,10 @@ $ sudo vi /etc/rc.local
 CHANGE SWAPPINESS:
 -----------------
 sudo vi /etc/sysctl.conf
-vm.swappiness = 10
+vm.swappiness=10
+
+sudo vi /etc/sysctl.d/local.conf
+vm.swappiness=1
 
 INSTALL APP TO RESTORE TMUX SESSIONS:
 -------------------------------------
@@ -69,7 +72,7 @@ SETUP WIFI:
 -----------
 Restrict the permissions of /etc/network/interfaces, to prevent pre-shared key (PSK) disclosure (alternatively use a separate config file such as /etc/network/interfaces.d/wlan0 on newer Debian versions):
 
-# chmod 0600 /etc/network/interfaces
+        sudo chmod 0600 /etc/network/interfaces
 
 Use the WPA passphrase to calculate the correct WPA PSK hash for your SSID by altering the following example:
 
@@ -87,7 +90,7 @@ you'll need to copy from "psk=" to the end of the line, to put in your /etc/netw
 
 Open /etc/network/interfaces in a text editor:
 
-# sensible-editor /etc/network/interfaces
+        sudo vim /etc/network/interfaces
 
 Define appropriate stanzas for your wireless interface, along with the SSID and PSK HASH. For example:
 
@@ -101,4 +104,12 @@ Save the file and exit the editor.
 
 Bring your interface up. This will start wpa_supplicant as a background process.
 
-# ifup wlan0
+        sudo ifup wlan0
+
+
+FIREFOX:
+------------------------------------------------------------
+full-screen-api.transition-duration.enter 0 0
+full-screen-api.transition-duration.leave 0 0
+full-screen-api.warning.timeout 0
+browser.sessionstore.interval 1800000
