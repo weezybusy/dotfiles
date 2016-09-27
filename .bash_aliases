@@ -6,7 +6,6 @@ alias gdb='gdb -q'
 alias python='python3'
 alias pip='pip3'
 alias dlna='sudo service minidlna restart && minidlnad -R -f /home/$USER/.minidlna/minidlna.conf'
-alias mpvstop='kill $(pgrep mpv)'
 
 # utils
 alias google='python3 ~/Templates/utils/google.py'

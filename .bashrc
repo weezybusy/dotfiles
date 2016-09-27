@@ -69,23 +69,6 @@ fi
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# play radio
-indie() {
-        indie="/home/$USER/Music/radio/indie.m3u"
-        if ! (( $(pgrep -c "mocp") > 0 )); then
-                mocp -S
-        fi
-        mocp -cap $indie
-}
-
-jazzy() {
-        jazzy="/home/$USER/Music/radio/jazzy.m3u"
-        if ! (( $(pgrep -c "mocp") > 0 )); then
-                mocp -S
-        fi
-        mocp -cap $jazzy
-}
-
 # check weather
 weather() {
         URL='http://www.accuweather.com/en/ua/kyiv/324505/weather-forecast/324505'
