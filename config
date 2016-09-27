@@ -145,9 +145,9 @@ FormatString = "%(a:%a - :)%(t:%t:)"
 #
 #    ALSADevice=tee:hw,'/tmp/out.wav',wav
 #
-#ALSADevice = default
-#ALSAMixer1 = PCM
-#ALSAMixer2 = Master
+ALSADevice = default
+ALSAMixer1 = Master
+ALSAMixer2 = PCM
 
 # Save software mixer state?
 # If enabled, a file 'softmixer' will be created in '~/.moc/' storing the
@@ -221,7 +221,7 @@ XTermTheme = black_theme
 
 # MOC directory (where pid file, socket and state files are stored).
 # You can use ~ at the beginning.
-#MOCDir = ~/.moc
+MOCDir = ~/.moc
 
 # Use mmap() to read files.  mmap() is much slower on NFS.
 #UseMMap = no
