@@ -105,4 +105,4 @@ if ! shopt -oq posix; then
         fi
 fi
 #setxkbmap "us,ru" ",winkeys" "grp:alt_caps_toggle"
-#setxkbmap -option caps:swapescape
+setxkbmap -option caps:swapescape

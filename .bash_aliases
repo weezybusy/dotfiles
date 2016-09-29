@@ -5,7 +5,8 @@ alias ls='ls -F --color=auto'
 alias gdb='gdb -q'
 alias python='python3'
 alias pip='pip3'
-alias dlna='sudo service minidlna restart && minidlnad -R -f /home/$USER/.minidlna/minidlna.conf'
+alias dlna='minidlnad -R -f ~/.minidlna/minidlna.conf'
+alias radio='pyradio -s ~/Music/radio/stations.csv'
 
 # utils
 alias google='python3 ~/Templates/utils/google.py'

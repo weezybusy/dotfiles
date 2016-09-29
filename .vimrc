@@ -23,7 +23,7 @@ au FileType python setlocal ts=4 et sts=4 sw=4
 set autowrite
 set autoread
 set noswapfile 
-set foldmethod=indent
+set foldmethod=syntax
 set foldlevel=1
 set foldnestmax=1
 set list
