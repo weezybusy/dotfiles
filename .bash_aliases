@@ -7,10 +7,11 @@ alias python='python3'
 alias pip='pip3'
 alias dlna='minidlnad -R -f ~/.minidlna/minidlna.conf'
 alias radio='pyradio -s ~/Music/radio/stations.csv'
+alias youtube-dl='~/.local/bin/youtube-dl'
 
 # utils
 alias google='python3 ~/Templates/utils/google.py'
-alias youtube='python3 ~/Templates/utils/youtube.py'
+#alias youtube='python3 ~/Templates/utils/youtube.py'
 alias translate='python3 ~/Templates/utils/translate.py'
 alias backup='rsync -urv --delete  --exclude="/lost+found" /media/$USER/work/* /media/$USER/stuff/work'
-alias underscore='python3 ~/Templates/utils/underscore.py'
+alias uscore='python3 ~/Templates/utils/uscore.py'

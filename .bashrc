@@ -80,7 +80,7 @@ weather() {
 #underscore() {
 #        find . -type f -name "* *.$1" -exec bash -c 'mv "$0" "${0// /_}"' {} \;
 #}
-#
+
 ## timer
 #timer() {
 #        echo 'mplayer ~/Templates/sounds/Bomb-timer.mp3 &> /dev/null' | at now + $1 min
@@ -105,4 +105,4 @@ if ! shopt -oq posix; then
         fi
 fi
 #setxkbmap "us,ru" ",winkeys" "grp:alt_caps_toggle"
-setxkbmap -option caps:swapescape
+#setxkbmap -option caps:swapescape
