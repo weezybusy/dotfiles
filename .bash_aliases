@@ -6,7 +6,7 @@ alias gdb='gdb -q'
 alias python='python3'
 alias pip='pip3'
 alias dlna='minidlnad -R -f ~/.minidlna/minidlna.conf'
-alias radio='pyradio -s ~/Music/radio/stations.csv'
+alias radio='pyradio -s ~/Music/stations.csv'
 alias youtube-dl='~/.local/bin/youtube-dl'
 
 # utils
