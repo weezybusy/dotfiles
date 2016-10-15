@@ -24,6 +24,10 @@ vm.swappiness=10
 sudo vi /etc/sysctl.d/local.conf
 vm.swappiness=1
 
+AUTOSTART TELEGRAM:
+-------------------
+home/$USER/.local/bin/Telegram -startintray
+
 INSTALL APP TO RESTORE TMUX SESSIONS:
 -------------------------------------
 $ pip install --user tmuxp
