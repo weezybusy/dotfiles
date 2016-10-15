@@ -357,12 +357,12 @@
     <!-- Brightness controls -->
     <keybind key="F9">
       <action name="Execute">
-        <command>xbacklight -10</command>
+        <command>xbacklight -dec 5</command>
       </action>
     </keybind>
     <keybind key="F10">
       <action name="Execute">
-        <command>xbacklight +10</command>
+        <command>xbacklight -inc 5</command>
       </action>
     </keybind>
     <!-- Launch gnome-screenshot when PrintScreen is pressed -->
