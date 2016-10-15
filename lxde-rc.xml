@@ -295,12 +295,6 @@
     <keybind key="W-f">
       <action name="ToggleFullscreen"/>
     </keybind>
-    <!-- Launch Task Manager with Ctrl+Alt+Del -->
-    <keybind key="A-C-Delete">
-      <action name="Execute">
-        <command>lxtask</command>
-      </action>
-    </keybind>
     <!-- Lock Screen -->
     <keybind key="C-A-l">
       <action name="Execute">
