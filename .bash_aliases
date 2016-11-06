@@ -7,8 +7,10 @@ alias python='python3'
 alias pip='pip3'
 alias dlna='/usr/bin/minidlnad -R -f ~/.minidlna/minidlna.conf'
 alias radio='pyradio -s ~/Music/stations.csv'
-alias yt='~/.local/bin/youtube-dl'
-alias ipy='ipython3 --no-banner'
+alias yt='~/.local/bin/youtube-dl -o "/media/weezy/stuff/vid/games/%(playlist_index)s. %(title)s.%(ext)s" -f 22 --ignore-errors'
+alias mk='make && echo " " && ./a.out'
+alias kr='cd ~/Documents/kr2'
+alias krtest='cd ~/Documents/playground/c/kr2_test'
 
 # utils
 alias google='python3 ~/Templates/utils/google.py'

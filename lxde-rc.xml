@@ -314,7 +314,7 @@
     <!-- Keybindings for running applications -->
     <keybind key="A-w">
       <action name="Execute">
-        <command>firefox-esr</command>
+        <command>firefox</command>
       </action>
     </keybind>
     <keybind key="A-f">
