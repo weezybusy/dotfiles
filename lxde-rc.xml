@@ -312,27 +312,27 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
-    <keybind key="A-w">
+    <keybind key="C-A-w">
       <action name="Execute">
         <command>firefox</command>
       </action>
     </keybind>
-    <keybind key="A-f">
+    <keybind key="C-A-f">
       <action name="Execute">
         <command>pcmanfm</command>
       </action>
     </keybind>
-    <keybind key="A-t">
+    <keybind key="C-A-t">
       <action name="Execute">
         <command>uxterm</command>
       </action>
     </keybind>
-    <keybind key="A-m">
+    <keybind key="C-A-m">
       <action name="Execute">
         <command>/home/weezy/.local/bin/Telegram</command>
       </action>
     </keybind>
-    <keybind key="A-c">
+    <keybind key="C-A-c">
       <action name="Execute">
         <command>qalculate-gtk</command>
       </action>

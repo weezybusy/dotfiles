@@ -21,5 +21,4 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-PATH=$PATH:/home/$USER/.local/bin
-export PATH
+export PATH=$PATH:$HOME/.local/bin

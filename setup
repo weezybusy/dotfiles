@@ -2,6 +2,8 @@ SETUP CRONTAB:
 --------------
 # backup work
 0 23 * * * rsync -urv --delete --exclude='/lost+found' /media/$USER/work/* /media/$USER/stuff/work
+0 23 * * * updatedb -l 0 -o ~/.work.db -U /media/weezy/work
+0 23 * * * updatedb -l 0 -o ~/.stuff.db -U /media/weezy/stuff
 
 # alarm
 0 6 * * * ~/Templates/alarm/wakeup
