@@ -25,3 +25,7 @@ alias lstuff='locate -d ~/.stuff.db'
 alias backup='rsync -urv --delete  --exclude="/lost+found" /media/$USER/work/* /media/$USER/stuff/work'
 # substitute spaces with underscores in all files of current directory
 alias uscore='python3 ~/Templates/utils/uscore.py'
+# update system
+alias upd8='sudo apt update && sudo apt upgrade && sudo apt-get autoclean'
+# remove application
+alias del='sudo apt-get purge --auto-remove'
