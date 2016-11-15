@@ -25,6 +25,8 @@ set foldmethod=syntax
 set foldlevel=1
 set foldnestmax=1
 set list
+set timeoutlen=1000
+set ttimeoutlen=100
 set t_Co=256
 syntax on
 set background=dark
