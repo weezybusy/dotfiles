@@ -70,25 +70,21 @@ fi
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # check weather
-weather() {
-        URL='http://www.accuweather.com/en/ua/kyiv/324505/weather-forecast/324505'
-        RES=$(wget -q -O- "$URL" | awk -F\' '/acm_RecentLocationsCarousel\.push/{ print $10 "° " $14 }' | head -1)
-        echo $RES
-}
+#weather() {
+#        URL='http://www.accuweather.com/en/ua/kyiv/324505/weather-forecast/324505'
+#        RES=$(wget -q -O- "$URL" | awk -F\' '/acm_RecentLocationsCarousel\.push/{ print $10 "° " $14 }' | head -1)
+#        echo $RES
+#}
 
 # convert spaces in file name to underscores
-#underscore() {
-#        find . -type f -name "* *.$1" -exec bash -c 'mv "$0" "${0// /_}"' {} \;
-#}
+underscore() {
+        find . -type f -name "* *.$1" -exec bash -c 'mv "$0" "${0// /_}"' {} \;
+}
 
-## timer
-#timer() {
-#        echo 'mplayer ~/Templates/sounds/Bomb-timer.mp3 &> /dev/null' | at now + $1 min
-#}
-#
-#yt() {
-#        youtube-dl -q -o- $1 | mplayer -cache 8192 -
-#}
+# timer
+timer() {
+        echo 'mplayer ~/Templates/sounds/Bomb-timer.mp3 &> /dev/null' | at now + $1 min
+}
 
 if [ -f ~/.bash_aliases ]; then
         . ~/.bash_aliases

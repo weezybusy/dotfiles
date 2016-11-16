@@ -12,7 +12,7 @@ alias radio='pyradio -s ~/Music/stations.csv'
 # save with file's original name
 alias wget='wget --content-disposition'
 # download playlist with numberings and 720p quality
-alias yt='~/.local/bin/youtube-dl -o "/media/weezy/stuff/vid/games/%(playlist_index)s. %(title)s.%(ext)s" -f 22 --ignore-errors'
+alias download_playlist='~/.local/bin/youtube-dl -o "/media/$USER/stuff/vid/games/%(playlist_index)s. %(title)s.%(ext)s" -f 22 --ignore-errors'
 # compile and execute
 alias mk='make && echo " " && ./a.out'
 # shortcuts
