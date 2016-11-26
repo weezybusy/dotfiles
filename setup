@@ -54,7 +54,7 @@ CHANGE LIGHTDM GREETER WALLPAPER:
 $ sudo vi /etc/lightdm/lightdm-gtk-greeter.conf
 
 OPTIONS:
-ckground=/home/weezy/Pictures/wallpaper.png
+background=/home/weezy/Pictures/wallpaper.png
 font-name=Droid Sans
 xft-antialias=true
 xft-dpi=96
