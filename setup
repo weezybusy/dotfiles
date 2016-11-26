@@ -4,8 +4,6 @@ DISPLAY=":0.0"
 0 23 * * * /usr/bin/rsync -urv --delete --exclude='/lost+found' /media/weezy/work/* /media/weezy/stuff/work
 0 23 * * * /usr/bin/updatedb -l 0 -o /home/weezy/.work.db -U /media/weezy/work
 0 23 * * * /usr/bin/updatedb -l 0 -o /home/weezy/.stuff.db -U /media/weezy/stuff
-30 7 * * * /usr/bin/notify-send "Good morning, weezy!"
-0 16 * * * /usr/bin/notify-send "Congratulations, weezy" "You've done the main part. Now let's do workout and you're free."
 0 * * * * /usr/bin/python3 /home/weezy/.local/bin/weather.py
 
 FIX HANGING ON COPYING LARGE FILES:
