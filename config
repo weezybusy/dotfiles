@@ -106,14 +106,14 @@ MusicDir = "/home/weezy/Music"
 FormatString = "%(a:%a - :)%(t:%t:)"
 
 # Input and output buffer sizes (in kilobytes).
-#InputBuffer = 512                  # Minimum value is 32KB
-#OutputBuffer = 512                 # Minimum value is 128KB
+#InputBuffer = 1024                  # Minimum value is 32KB
+#OutputBuffer = 1024                 # Minimum value is 128KB
 
 # How much to fill the input buffer before playing (in kilobytes)?
 # This can't be greater than the value of InputBuffer.  While this has
 # a positive effect for network streams, it also causes the broadcast
 # audio to be delayed.
-#Prebuffering = 64
+Prebuffering = 128
 
 # Use this HTTP proxy server for internet streams.  If not set, the
 # environment variables http_proxy and ALL_PROXY will be used if present.
@@ -653,7 +653,7 @@ PlaylistFullPaths = no
 #
 # Example:    OnSongChange = "/home/jack/.moc/myscript %a %r"
 #
-#OnSongChange =
+OnSongChange = "/usr/bin/notify-send %a %t"
 
 # If RepeatSongChange is 'yes' then MOC will execute the command every time
 # a song starts playing regardless of whether or not it is just repeating.

@@ -151,7 +151,7 @@
     <floatingX>0</floatingX>
     <floatingY>0</floatingY>
     <noStrut>no</noStrut>
-    <stacking>Below</stacking>
+    <stacking>Above</stacking>
     <!-- 'Above', 'Normal', or 'Below' -->
     <direction>Vertical</direction>
     <!-- 'Vertical' or 'Horizontal' -->
@@ -222,16 +222,6 @@
     <keybind key="A-2">
       <action name="Desktop">
         <desktop>2</desktop>
-      </action>
-    </keybind>
-    <keybind key="A-3">
-      <action name="Desktop">
-        <desktop>3</desktop>
-      </action>
-    </keybind>
-    <keybind key="A-4">
-      <action name="Desktop">
-        <desktop>4</desktop>
       </action>
     </keybind>
     <keybind key="W-d">
@@ -329,7 +319,7 @@
     </keybind>
     <keybind key="C-A-m">
       <action name="Execute">
-        <command>/home/weezy/.local/bin/Telegram</command>
+        <command>/home/weezy/.local/bin/Telegram -startintray</command>
       </action>
     </keybind>
     <keybind key="C-A-c">
