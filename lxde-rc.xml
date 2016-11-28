@@ -349,10 +349,10 @@
         <command>xbacklight -inc 5</command>
       </action>
     </keybind>
-    <!-- Launch gnome-screenshot when PrintScreen is pressed -->
+    <!-- Launch Scrot when PrintScreen is pressed -->
     <keybind key="Print">
       <action name="Execute">
-        <command>gnome-screenshot -i</command>
+        <command>scrot</command>
       </action>
     </keybind>
     <!-- Launch LXRandR when Fn+Screen is pressed -->
