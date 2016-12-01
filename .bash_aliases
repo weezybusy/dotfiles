@@ -15,13 +15,14 @@ alias pyradio='~/.local/bin/pyradio'
 alias radio='~/.local/bin/pyradio -s ~/Music/stations.csv'
 # save with file's original name
 alias wget='wget --content-disposition'
-# download playlist with numberings and 720p quality
+# youtube-dl
+alias yt='~/.local/bin/youtube-dl -f 22'
 alias download_playlist='~/.local/bin/youtube-dl -o "%(playlist_index)s. %(title)s.%(ext)s" -f 22 --ignore-errors'
 # compile and execute
 alias mk='make && echo " " && ./a.out && echo " "'
 # shortcuts
-alias csandbox='cd ~/Documents/sandbox/c'
-alias psandbox='cd ~/Documents/sandbox/python'
+alias sandbox='cd ~/Documents/sandbox'
+alias stuff='cd /media/weezy/stuff'
 # search local databases
 alias lwork='locate -d ~/.work.db'
 alias lstuff='locate -d ~/.stuff.db'
