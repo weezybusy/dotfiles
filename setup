@@ -24,6 +24,11 @@ vm.swappiness=10
 sudo vi /etc/sysctl.d/local.conf
 vm.swappiness=1
 
+sudo sysctl -w vm.swappiness=10
+
+# Verify the change
+cat /proc/sys/vm/swappiness
+
 AUTOSTART TELEGRAM:
 -------------------
 home/$USER/.local/bin/Telegram -startintray
@@ -60,11 +65,6 @@ xft-hintstyle=hintslight
 xft-rgba=rgb
 show-clock=true
 clock-format=%H:%M
-
-SETUP TTY FONT:
----------------
-$ sudo dpkg-reconfigure console-setup
----------------
 
 FIX NETWORK MANAGER:
 --------------------
@@ -117,6 +117,7 @@ full-screen-api.transition-duration.enter 0 0
 full-screen-api.transition-duration.leave 0 0
 full-screen-api.warning.timeout 0
 browser.sessionstore.interval 1800000
+browser.sessionstore.restore_pinned_tabs_on_demand
 
 MINILDNA:
 ------------------------------------------------------------
