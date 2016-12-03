@@ -18,3 +18,5 @@
 [2016/12/02 23:04:29] playlist.c:125: warn: Parsing playlists...
 [2016/12/02 23:04:29] playlist.c:256: warn: Finished parsing playlists.
 [2016/12/02 23:04:30] inotify.c:198: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [14] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2016/12/03 08:54:46] minidlna.c:153: warn: received signal 15, good-bye
+[2016/12/03 08:54:46] minidlna.c:171: warn: received signal 1, re-read

@@ -15,6 +15,7 @@ alias yt='~/.local/bin/youtube-dl -f 22'
 alias mk='make && echo " " && ./a.out && echo " "'
 # shortcuts
 alias sandbox='cd ~/Documents/sandbox'
+alias 6002x='cd ~/Documents/6002x'
 alias stuff='cd /media/weezy/stuff'
 # backup working directory
-alias backup='rsync -urv --delete  --exclude="/lost+found" /media/$USER/work/* /media/$USER/stuff/work'
+alias backup='rsync -urv --delete  --exclude="/lost+found" /media/$USER/work/* /media/$USER/stuff/documents/work'
