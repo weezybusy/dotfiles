@@ -11,13 +11,3 @@
 	ui = auto
 [push]
 	default = simple
-[alias]
-	ch = checkout
-	co = commit
-	st = status
-	br = branch
-	ph = push
-	pl = pull
-	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-	type = cat-file -t
-	dump = cat-file -p
