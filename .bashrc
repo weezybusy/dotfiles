@@ -12,12 +12,15 @@ esac
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
 
+# don't put commands to history
+HISTIGNORE="history:h:l:ll:la"
+
 # append to the history file, don't overwrite it
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=1024
+HISTFILESIZE=2048
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -57,7 +60,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[92m\]\u@\h\[\033[00m\]:\[\033[94m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[92m\]\u\[\033[00m\]@\[\033[93m\]\h\[\033[00m\]:\[\033[94m\]\w\[\033[00m\]\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
