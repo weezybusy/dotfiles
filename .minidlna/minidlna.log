@@ -54,3 +54,39 @@
 [2016/12/05 11:51:09] playlist.c:125: warn: Parsing playlists...
 [2016/12/05 11:51:09] playlist.c:256: warn: Finished parsing playlists.
 [2016/12/05 11:51:10] inotify.c:198: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [15] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2016/12/05 17:24:11] metadata.c:700: warn: Opening /media/weezy/stuff/videos/TVshows/Friends.With.Benefits.S01.720p.WEB.DL/Friends.With.Benefits.S01E03.720p.WEB.DL.DD5.1.H.264.F0RKi.mkv failed! [Invalid data found when processing input]
+[2016/12/05 17:24:11] scanner.c:489: warn: Unsuccessful getting details for /media/weezy/stuff/videos/TVshows/Friends.With.Benefits.S01.720p.WEB.DL/Friends.With.Benefits.S01E03.720p.WEB.DL.DD5.1.H.264.F0RKi.mkv!
+[2016/12/05 17:24:11] metadata.c:700: warn: Opening /media/weezy/stuff/videos/TVshows/Friends.With.Benefits.S01.720p.WEB.DL/Friends.With.Benefits.S01E04.720p.WEB.DL.DD5.1.H.264.F0RKi.mkv failed! [Invalid data found when processing input]
+[2016/12/05 17:24:11] scanner.c:489: warn: Unsuccessful getting details for /media/weezy/stuff/videos/TVshows/Friends.With.Benefits.S01.720p.WEB.DL/Friends.With.Benefits.S01E04.720p.WEB.DL.DD5.1.H.264.F0RKi.mkv!
+[2016/12/05 17:24:11] metadata.c:700: warn: Opening /media/weezy/stuff/videos/TVshows/Friends.With.Benefits.S01.720p.WEB.DL/Friends.With.Benefits.S01E01.Pilot.720p.WEB.DL.DD5.1.H.264.TB.mkv failed! [Invalid data found when processing input]
+[2016/12/05 17:24:11] scanner.c:489: warn: Unsuccessful getting details for /media/weezy/stuff/videos/TVshows/Friends.With.Benefits.S01.720p.WEB.DL/Friends.With.Benefits.S01E01.Pilot.720p.WEB.DL.DD5.1.H.264.TB.mkv!
+[2016/12/05 17:24:11] metadata.c:700: warn: Opening /media/weezy/stuff/videos/TVshows/Friends.With.Benefits.S01.720p.WEB.DL/Friends.With.Benefits.S01E02.The.Benefit.of.the.Mute.Button.720p.WEB.DL.DD5.1.H.264.TB.mkv failed! [Invalid data found when processing input]
+[2016/12/05 17:24:11] scanner.c:489: warn: Unsuccessful getting details for /media/weezy/stuff/videos/TVshows/Friends.With.Benefits.S01.720p.WEB.DL/Friends.With.Benefits.S01E02.The.Benefit.of.the.Mute.Button.720p.WEB.DL.DD5.1.H.264.TB.mkv!
+[2016/12/05 17:24:12] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: CAPTIONS.ID]
+INSERT into CAPTIONS (ID, PATH) VALUES (198, '/media/weezy/stuff/videos/TVshows/Friends.With.Benefits.S01.720p.WEB.DL/Friends.With.Benefits.S01E06.720p.WEB-DL.DD5.1.H.264-KiNGS.srt')
+[2016/12/05 17:24:12] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: CAPTIONS.ID]
+INSERT into CAPTIONS (ID, PATH) VALUES (197, '/media/weezy/stuff/videos/TVshows/Friends.With.Benefits.S01.720p.WEB.DL/Friends.With.Benefits.S01E13.720p.WEB-DL.DD5.1.H.264-KiNGS.srt')
+[2016/12/05 17:24:12] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: CAPTIONS.ID]
+INSERT into CAPTIONS (ID, PATH) VALUES (194, '/media/weezy/stuff/videos/TVshows/Friends.With.Benefits.S01.720p.WEB.DL/Friends.With.Benefits.S01E08.720p.WEB-DL.DD5.1.H.264-KiNGS.srt')
+[2016/12/05 17:24:12] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: CAPTIONS.ID]
+INSERT into CAPTIONS (ID, PATH) VALUES (192, '/media/weezy/stuff/videos/TVshows/Friends.With.Benefits.S01.720p.WEB.DL/Friends.With.Benefits.S01E09.720p.WEB-DL.DD5.1.H.264-KiNGS.srt')
+[2016/12/05 17:24:12] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: CAPTIONS.ID]
+INSERT into CAPTIONS (ID, PATH) VALUES (195, '/media/weezy/stuff/videos/TVshows/Friends.With.Benefits.S01.720p.WEB.DL/Friends.With.Benefits.S01E05.720p.WEB-DL.DD5.1.H.264-KiNGS.srt')
+[2016/12/05 17:24:12] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: CAPTIONS.ID]
+INSERT into CAPTIONS (ID, PATH) VALUES (193, '/media/weezy/stuff/videos/TVshows/Friends.With.Benefits.S01.720p.WEB.DL/Friends.With.Benefits.S01E10.720p.WEB-DL.DD5.1.H.264-KiNGS.srt')
+[2016/12/05 17:24:12] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: CAPTIONS.ID]
+INSERT into CAPTIONS (ID, PATH) VALUES (196, '/media/weezy/stuff/videos/TVshows/Friends.With.Benefits.S01.720p.WEB.DL/Friends.With.Benefits.S01E07.720p.WEB-DL.DD5.1.H.264-KiNGS.srt')
+[2016/12/05 17:24:12] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: CAPTIONS.ID]
+INSERT into CAPTIONS (ID, PATH) VALUES (199, '/media/weezy/stuff/videos/TVshows/Friends.With.Benefits.S01.720p.WEB.DL/Friends.With.Benefits.S01E11.720p.WEB-DL.DD5.1.H.264-KiNGS.srt')
+[2016/12/05 17:24:12] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: CAPTIONS.ID]
+INSERT into CAPTIONS (ID, PATH) VALUES (191, '/media/weezy/stuff/videos/TVshows/Friends.With.Benefits.S01.720p.WEB.DL/Friends.With.Benefits.S01E12.720p.WEB-DL.DD5.1.H.264-KiNGS.srt')
+[2016/12/05 21:11:03] playlist.c:125: warn: Parsing playlists...
+[2016/12/05 21:11:03] playlist.c:256: warn: Finished parsing playlists.
+[2016/12/05 21:25:25] playlist.c:125: warn: Parsing playlists...
+[2016/12/05 21:25:25] playlist.c:256: warn: Finished parsing playlists.
+[2016/12/06 15:02:55] playlist.c:125: warn: Parsing playlists...
+[2016/12/06 15:02:55] playlist.c:256: warn: Finished parsing playlists.
+[2016/12/06 16:13:47] playlist.c:125: warn: Parsing playlists...
+[2016/12/06 16:13:47] playlist.c:256: warn: Finished parsing playlists.
+[2016/12/06 16:20:09] minidlna.c:153: warn: received signal 15, good-bye
+[2016/12/06 16:20:09] minidlna.c:171: warn: received signal 1, re-read
