@@ -34,7 +34,6 @@
     <!-- with Smart placement on a multi-monitor system, try to place new windows
        on: 'Any' - any monitor, 'Mouse' - where the mouse is, 'Active' - where
        the active window is -->
-    <primaryMonitor/>
   </placement>
   <theme>
     <name>Nightmare-02</name>
@@ -49,55 +48,64 @@
       S: shade (roll up/down)
       D: omnipresent (on all desktops).
   -->
-    <keepBorder>no</keepBorder>
-    <animateIconify>no</animateIconify>
+    <keepBorder>yes</keepBorder>
+    <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>Roboto Condensed,</name>
-      <size>11</size>
+      <name>sans</name>
+      <size>10</size>
       <!-- font size in points -->
-      <weight>Bold</weight>
+      <weight>bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>Normal</slant>
+      <slant>normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>Roboto Condensed,</name>
-      <size>11</size>
+      <name>sans</name>
+      <size>10</size>
       <!-- font size in points -->
-      <weight>Bold</weight>
+      <weight>bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>Normal</slant>
+      <slant>normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
-      <name>Roboto Condensed,</name>
-      <size>11</size>
+      <name>sans</name>
+      <size>10</size>
       <!-- font size in points -->
-      <weight>Normal</weight>
+      <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>Normal</slant>
+      <slant>normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuItem">
-      <name>Roboto Condensed,</name>
-      <size>11</size>
+      <name>sans</name>
+      <size>10</size>
       <!-- font size in points -->
-      <weight>Normal</weight>
+      <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>Normal</slant>
+      <slant>normal</slant>
+      <!-- 'italic' or 'normal' -->
+    </font>
+    <font place="OnScreenDisplay">
+      <name>sans</name>
+      <size>10</size>
+      <!-- font size in points -->
+      <weight>bold</weight>
+      <!-- 'bold' or 'normal' -->
+      <slant>normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>Roboto Condensed,</name>
-      <size>11</size>
-      <weight>Bold</weight>
-      <slant>Normal</slant>
+      <name>Sans</name>
+      <size>8</size>
+      <weight/>
+      <slant/>
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>Roboto Condensed,</name>
-      <size>11</size>
-      <weight>Bold</weight>
-      <slant>Normal</slant>
+      <name>Sans</name>
+      <size>8</size>
+      <weight/>
+      <slant/>
     </font>
   </theme>
   <desktops>
@@ -112,15 +120,17 @@
     <number>2</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>WEB</name>
-      <name>TERM</name>
+      <!-- set names up here if you want to, like this:
+    <name>desktop 1</name>
+    <name>desktop 2</name>
+    -->
     </names>
-    <popupTime>275</popupTime>
+    <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
        desktops.  Set this to 0 to disable the popup. -->
   </desktops>
   <resize>
-    <drawContents>no</drawContents>
+    <drawContents>yes</drawContents>
     <popupShow>Nonpixel</popupShow>
     <!-- 'Always', 'Never', or 'Nonpixel' (xterms and such) -->
     <popupPosition>Center</popupPosition>
@@ -231,8 +241,13 @@
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- Keybindings for windows -->
-    <keybind key="W-q">
+    <keybind key="A-F4">
       <action name="Close"/>
+    </keybind>
+    <keybind key="A-Escape">
+      <action name="Lower"/>
+      <action name="FocusToBottom"/>
+      <action name="Unfocus"/>
     </keybind>
     <keybind key="A-space">
       <action name="ShowMenu">
@@ -253,76 +268,27 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
-    <keybind key="W-e">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>PCManFM</name>
-        </startupnotify>
-        <command>pcmanfm</command>
-      </action>
-    </keybind>
-    <!--keybindings for LXPanel -->
-    <keybind key="A-r">
-      <action name="Execute">
-        <command>lxpanelctl run</command>
-      </action>
-    </keybind>
-    <keybind key="C-Escape">
-      <action name="Execute">
-        <command>lxpanelctl menu</command>
-      </action>
-    </keybind>
-    <keybind key="A-F1">
-      <action name="Execute">
-        <command>lxpanelctl menu</command>
-      </action>
-    </keybind>
-    <!-- Keybindings to toggle fullscreen -->
-    <keybind key="W-m">
-      <action name="ToggleMaximizeFull"/>
-    </keybind>
-    <keybind key="W-f">
-      <action name="ToggleFullscreen"/>
-    </keybind>
-    <!-- Lock Screen -->
-    <keybind key="C-A-l">
-      <action name="Execute">
-        <command>/usr/bin/dm-tool lock</command>
-      </action>
-    </keybind>
-    <!-- Logout Session -->
-    <keybind key="C-A-Delete">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Logout Session</name>
-        </startupnotify>
-        <command>lxsession-logout</command>
-      </action>
-    </keybind>
-    <!-- Keybindings for running applications -->
-    <keybind key="C-A-w">
+    <keybind key="W-w">
       <action name="Execute">
         <command>firefox</command>
       </action>
     </keybind>
-    <keybind key="C-A-f">
+    <keybind key="W-f">
       <action name="Execute">
         <command>pcmanfm</command>
       </action>
     </keybind>
-    <keybind key="C-A-t">
+    <keybind key="W-t">
       <action name="Execute">
-        <command>uxterm</command>
+        <command>xterm</command>
       </action>
     </keybind>
-    <keybind key="C-A-m">
+    <keybind key="W-m">
       <action name="Execute">
         <command>/home/weezy/.local/bin/Telegram -startintray</command>
       </action>
     </keybind>
-    <keybind key="C-A-c">
+    <keybind key="W-c">
       <action name="Execute">
         <command>qalculate-gtk</command>
       </action>
@@ -355,6 +321,46 @@
         <command>scrot</command>
       </action>
     </keybind>
+    <!--keybindings for LXPanel -->
+    <keybind key="W-r">
+      <action name="Execute">
+        <command>lxpanelctl run</command>
+      </action>
+    </keybind>
+    <keybind key="A-F2">
+      <action name="Execute">
+        <command>lxpanelctl run</command>
+      </action>
+    </keybind>
+    <keybind key="C-Escape">
+      <action name="Execute">
+        <command>lxpanelctl menu</command>
+      </action>
+    </keybind>
+    <keybind key="A-F1">
+      <action name="Execute">
+        <command>lxpanelctl menu</command>
+      </action>
+    </keybind>
+    <keybind key="A-F11">
+      <action name="ToggleFullscreen"/>
+    </keybind>
+    <!-- Launch Task Manager with Ctrl+Alt+Del -->
+    <keybind key="A-C-Delete">
+      <action name="Execute">
+        <command>lxtask</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-Delete">
+      <action name="Execute">
+        <command>lxsession-logout</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-l">
+      <action name="Execute">
+        <command>dm-tool lock</command>
+      </action>
+    </keybind>
     <!-- Launch LXRandR when Fn+Screen is pressed -->
     <keybind key="XF86Display">
       <action name="Execute">
@@ -367,7 +373,7 @@
     <!-- number of pixels the mouse must move before a drag begins -->
     <doubleClickTime>200</doubleClickTime>
     <!-- in milliseconds (1000 = 1 second) -->
-    <screenEdgeWarpTime>0</screenEdgeWarpTime>
+    <screenEdgeWarpTime>400</screenEdgeWarpTime>
     <!-- Time before changing desktops when the pointer touches the edge of the
        screen while moving a window, in milliseconds (1000 = 1 second).
        Set this to 0 to disable warping -->
@@ -784,15 +790,5 @@
 
   # end of the example
 -->
-    <application class="*">
-      <position force="no">
-        <x>center</x>
-        <y>center</y>
-      </position>
-    </application>
-    <application name="Navigator">
-      <decor>no</decor>
-      <maximized>true</maximized>
-    </application>
   </applications>
 </openbox_config>
