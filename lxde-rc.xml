@@ -34,6 +34,7 @@
     <!-- with Smart placement on a multi-monitor system, try to place new windows
        on: 'Any' - any monitor, 'Mouse' - where the mouse is, 'Active' - where
        the active window is -->
+    <primaryMonitor/>
   </placement>
   <theme>
     <name>Nightmare-02</name>
@@ -120,17 +121,15 @@
     <number>2</number>
     <firstdesk>1</firstdesk>
     <names>
-      <!-- set names up here if you want to, like this:
-    <name>desktop 1</name>
-    <name>desktop 2</name>
-    -->
+      <name>WEB</name>
+      <name>TERM</name>
     </names>
-    <popupTime>875</popupTime>
+    <popupTime>375</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
        desktops.  Set this to 0 to disable the popup. -->
   </desktops>
   <resize>
-    <drawContents>yes</drawContents>
+    <drawContents>no</drawContents>
     <popupShow>Nonpixel</popupShow>
     <!-- 'Always', 'Never', or 'Nonpixel' (xterms and such) -->
     <popupPosition>Center</popupPosition>
@@ -224,12 +223,12 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="A-1">
+    <keybind key="W-1">
       <action name="Desktop">
         <desktop>1</desktop>
       </action>
     </keybind>
-    <keybind key="A-2">
+    <keybind key="W-2">
       <action name="Desktop">
         <desktop>2</desktop>
       </action>
@@ -270,7 +269,7 @@
     <!-- Keybindings for running applications -->
     <keybind key="W-w">
       <action name="Execute">
-        <command>firefox</command>
+        <command>chromium</command>
       </action>
     </keybind>
     <keybind key="W-f">
@@ -280,7 +279,7 @@
     </keybind>
     <keybind key="W-t">
       <action name="Execute">
-        <command>xterm</command>
+        <command>uxterm -e "tmux -2"</command>
       </action>
     </keybind>
     <keybind key="W-m">
@@ -346,7 +345,7 @@
       <action name="ToggleFullscreen"/>
     </keybind>
     <!-- Launch Task Manager with Ctrl+Alt+Del -->
-    <keybind key="A-C-Delete">
+    <keybind key="A-C-T">
       <action name="Execute">
         <command>lxtask</command>
       </action>
@@ -373,7 +372,7 @@
     <!-- number of pixels the mouse must move before a drag begins -->
     <doubleClickTime>200</doubleClickTime>
     <!-- in milliseconds (1000 = 1 second) -->
-    <screenEdgeWarpTime>400</screenEdgeWarpTime>
+    <screenEdgeWarpTime>0</screenEdgeWarpTime>
     <!-- Time before changing desktops when the pointer touches the edge of the
        screen while moving a window, in milliseconds (1000 = 1 second).
        Set this to 0 to disable warping -->
