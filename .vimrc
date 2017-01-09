@@ -15,8 +15,6 @@ set colorcolumn=+1
 set nowrap
 set ruler
 set showmatch
-set autoindent
-set cindent
 set expandtab
 set autowrite
 set autoread
@@ -29,5 +27,5 @@ set timeoutlen=1000
 set ttimeoutlen=100
 set t_Co=256
 syntax on
-set background=dark
-colorscheme gruvbox
+set bg=dark
+colo gruvbox

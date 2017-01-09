@@ -1,0 +1,6 @@
+pcmanfm -d &
+tint2 &
+compton &
+redshift &
+/home/weezy/.local/bin/minidlna &
+xscreensaver -no-splash &
