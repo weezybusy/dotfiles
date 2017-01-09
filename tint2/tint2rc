@@ -12,7 +12,8 @@ border_color = #FFFFFF 16
 # ID 2
 rounded = 0
 border_width = 0
-background_color = #FFFFFF 40
+background_color = #5B8F73 60
+#background_color = #FFFFFF 40
 border_color = #FFFFFF 48
 
 # ID 3
