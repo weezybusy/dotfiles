@@ -4,3 +4,4 @@ compton &
 redshift &
 /home/weezy/.local/bin/minidlna &
 xscreensaver -no-splash &
+feh --bg-scale ~/Pictures/a.jpg &
