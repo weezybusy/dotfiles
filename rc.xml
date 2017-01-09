@@ -337,6 +337,11 @@
         <command>qalculate-gtk</command>
       </action>
     </keybind>
+    <keybind key="A-m">
+      <action name="ShowMenu">
+        <menu>root-menu</menu>
+      </action>
+    </keybind>
     <!-- Sound controls -->
     <keybind key="F7">
       <action name="Execute">
