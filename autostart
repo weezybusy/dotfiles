@@ -2,6 +2,6 @@ pcmanfm -d &
 tint2 &
 compton &
 redshift &
-/home/weezy/.local/bin/minidlna &
-xscreensaver &
 feh --bg-scale ~/Pictures/a.jpg &
+sleep 5 &
+$HOME/.local/bin/minidlna start &

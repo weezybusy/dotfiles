@@ -13,7 +13,6 @@ border_color = #FFFFFF 16
 rounded = 0
 border_width = 0
 background_color = #5B8F73 60
-#background_color = #FFFFFF 40
 border_color = #FFFFFF 48
 
 # ID 3
@@ -50,9 +49,9 @@ taskbar_active_background_id = 0
 urgent_nb_of_blink = 8
 task_icon = 1
 task_text = 1
-task_centered = 1
+task_centered = 0
 task_maximum_size = 200 26
-task_padding = 0 4
+task_padding = 2 4
 task_background_id = 3
 task_active_background_id = 2
 task_urgent_background_id = 2
