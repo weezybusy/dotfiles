@@ -52,12 +52,12 @@ fi
 
 # Set the default configuration file
 if [ -z $CONFIGFILE ]; then
-	CONFIGFILE=$HOME/.$NAME/minidlna.conf
+	CONFIGFILE=~/.$NAME/minidlna.conf
 fi
 
 # Set the default log file
 if [ -z $LOGFILE ]; then
-	LOGFILE=$HOME/.$NAME/minidlna.log
+	LOGFILE=~/.$NAME/minidlna.log
 fi
 
 # Run as `minidlna' if USER is not specified or is `root'

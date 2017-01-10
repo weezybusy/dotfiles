@@ -3,5 +3,4 @@ tint2 &
 compton &
 redshift &
 feh --bg-scale ~/Pictures/a.jpg &
-sleep 5 &
-$HOME/.local/bin/minidlna start &
+(sleep 5 && ~/.local/bin/minidlna start) &
