@@ -23,6 +23,7 @@ alias r='make -s && ./a.out'
 alias yt='youtube-dl -o "%(autonumber)s. %(title)s.%(ext)s" -f22 --no-playlist'
 alias ytp='youtube-dl -o "%(playlist_index)s. %(title)s.%(ext)s" -f22'
 alias fonts='fc-list | cut -f2 -d: | sort -u'
+alias tv='~/.local/bin/minidlna start'
 # shortcuts
 alias ..='cd ..'
 alias ...='cd ../..'
