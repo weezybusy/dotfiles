@@ -4,3 +4,4 @@ compton &
 redshift &
 feh --bg-scale ~/Pictures/a.jpg &
 (sleep 5 && ~/.local/bin/minidlna start) &
+xscreensaver &
