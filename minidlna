@@ -28,9 +28,9 @@ PATH=/sbin:/usr/sbin:/bin:/usr/bin
 DESC="DLNA/UPnP-AV media server"
 NAME=minidlna
 DAEMON=/usr/bin/minidlnad
-PIDDIR=$HOME/.$NAME
+PIDDIR=~/.$NAME
 PIDFILE=$PIDDIR/minidlna.pid
-SCRIPTNAME=$HOME/.local/bin/$NAME
+SCRIPTNAME=~/.local/bin/$NAME
 DEFAULT=/etc/default/$NAME
 
 # Exit if the package is not installed
