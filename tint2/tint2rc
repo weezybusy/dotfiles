@@ -6,8 +6,8 @@
 # ID 1
 rounded = 0
 border_width = 0
-background_color = #000000 60
-border_color = #FFFFFF 16
+background_color = #000000 30
+border_color = #FFFFFF 0
 
 # ID 2
 rounded = 0

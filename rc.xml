@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Nightmare-02</name>
+    <name>Onyx</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -123,12 +123,10 @@
     <number>2</number>
     <firstdesk>1</firstdesk>
     <names>
-      <!-- set names up here if you want to, like this:
-    <name>desktop 1</name>
-    <name>desktop 2</name>
-    -->
+      <name>WWW</name>
+      <name>TERM</name>
     </names>
-    <popupTime>300</popupTime>
+    <popupTime>0</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
        desktops.  Set this to 0 to disable the popup. -->
   </desktops>
@@ -314,7 +312,7 @@
     <!-- Keybindings for running applications -->
     <keybind key="W-w">
       <action name="Execute">
-        <command>chromium</command>
+        <command>firefox-esr</command>
       </action>
     </keybind>
     <keybind key="W-f">
