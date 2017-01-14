@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Onyx</name>
+    <name>Nightmare-02</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -239,7 +239,7 @@
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- Keybindings for windows -->
-    <keybind key="A-F4">
+    <keybind key="W-q">
       <action name="Close"/>
     </keybind>
     <keybind key="A-Escape">
@@ -325,7 +325,7 @@
         <command>uxterm -e "tmux -2"</command>
       </action>
     </keybind>
-    <keybind key="W-m">
+    <keybind key="C-A-m">
       <action name="Execute">
         <command>/home/weezy/.local/bin/telegram/Telegram -startintray</command>
       </action>
@@ -340,7 +340,7 @@
         <command>xset dpms force off</command>
       </action>
     </keybind>
-    <keybind key="A-m">
+    <keybind key="Menu">
       <action name="ShowMenu">
         <menu>root-menu</menu>
       </action>
@@ -371,6 +371,29 @@
       <action name="Execute">
         <command>gmrun</command>
       </action>
+    </keybind>
+    <keybind key="W-h">
+      <action name="MoveToEdge">
+        <direction>west</direction>
+      </action>
+    </keybind>
+    <keybind key="W-j">
+      <action name="MoveToEdge">
+        <direction>south</direction>
+      </action>
+    </keybind>
+    <keybind key="W-k">
+      <action name="MoveToEdge">
+        <direction>north</direction>
+      </action>
+    </keybind>
+    <keybind key="W-l">
+      <action name="MoveToEdge">
+        <direction>east</direction>
+      </action>
+    </keybind>
+    <keybind key="W-m">
+      <action name="ToggleMaximize"/>
     </keybind>
     <!-- Launch scrot when Print is pressed -->
     <keybind key="Print">
@@ -835,5 +858,8 @@
 
   # end of the example
 -->
+    <application name="*">
+      <decor>no</decor>
+    </application>
   </applications>
 </openbox_config>
