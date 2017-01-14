@@ -1,6 +1,4 @@
 pcmanfm -d &
 compton &
-#tint2 &
 redshift &
-feh --bg-scale ~/Pictures/a.jpg &
-(sleep 5 && ~/.local/bin/minidlna start) &
+(sleep 2 && ~/.local/bin/minidlna start) &
