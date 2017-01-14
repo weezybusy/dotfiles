@@ -157,14 +157,14 @@
     <right>0</right>
   </margins>
   <dock>
-    <position>TopLeft</position>
+    <position>Top</position>
     <!-- (Top|Bottom)(Left|Right|)|Top|Bottom|Left|Right|Floating -->
     <floatingX>0</floatingX>
     <floatingY>0</floatingY>
     <noStrut>no</noStrut>
     <stacking>Above</stacking>
     <!-- 'Above', 'Normal', or 'Below' -->
-    <direction>Vertical</direction>
+    <direction>Horizontal</direction>
     <!-- 'Vertical' or 'Horizontal' -->
     <autoHide>no</autoHide>
     <hideDelay>300</hideDelay>
@@ -239,7 +239,7 @@
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- Keybindings for windows -->
-    <keybind key="W-q">
+    <keybind key="C-q">
       <action name="Close"/>
     </keybind>
     <keybind key="A-Escape">
@@ -860,6 +860,10 @@
 -->
     <application name="*">
       <decor>no</decor>
+      <position force="no">
+        <x>center</x>
+        <y>center</y>
+      </position>
     </application>
   </applications>
 </openbox_config>
