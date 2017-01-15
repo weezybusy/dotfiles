@@ -125,8 +125,8 @@
     <names>
       <name>WWW</name>
       <name>TERM</name>
+      <name>FILES</name>
       <name>CHAT</name>
-      <name>OTHER</name>
     </names>
     <popupTime>300</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
