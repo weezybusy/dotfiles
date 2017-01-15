@@ -327,7 +327,7 @@
     </keybind>
     <keybind key="C-A-m">
       <action name="Execute">
-        <command>/home/weezy/.local/bin/telegram/Telegram -startintray</command>
+        <command>/home/weezy/.local/bin/telegram/Telegram</command>
       </action>
     </keybind>
     <keybind key="W-c">
