@@ -120,13 +120,15 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>2</number>
+    <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>WWW</name>
       <name>TERM</name>
+      <name>CHAT</name>
+      <name>OTHER</name>
     </names>
-    <popupTime>0</popupTime>
+    <popupTime>300</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
        desktops.  Set this to 0 to disable the popup. -->
   </desktops>
@@ -233,6 +235,16 @@
     <keybind key="A-2">
       <action name="GoToDesktop">
         <to>2</to>
+      </action>
+    </keybind>
+    <keybind key="A-3">
+      <action name="GoToDesktop">
+        <to>3</to>
+      </action>
+    </keybind>
+    <keybind key="A-4">
+      <action name="GoToDesktop">
+        <to>4</to>
       </action>
     </keybind>
     <keybind key="W-d">
