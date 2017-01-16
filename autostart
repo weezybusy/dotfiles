@@ -1,5 +1,5 @@
 pcmanfm -d &
-compton &
+compton -b &
 redshift &
 feh --bg-scale ~/Pictures/a.jpg &
 (sleep 2 && ~/.local/bin/minidlna start) &
