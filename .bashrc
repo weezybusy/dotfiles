@@ -84,6 +84,74 @@ fi
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
+# cd to dir of defined file | Usage: cdf <file>
+cdf() {
+    cd "$(dirname "$(locate -i "$*" | head -n 1)")" ;
+}
+
+# automatically do an ls after each cd
+cdl() {
+    if [ -n "$1" ]; then
+        builtin cd "$@" && ls --group-directories-first --color=auto
+    else
+        builtin cd ~ && ls --group-directories-first --color=auto
+    fi
+}
+
+# mkdir & cd into it | Usage: mkcd
+mcd() {
+    if [ ! -n "$1" ]; then
+        echo "Enter a name for this folder"
+    elif [ -d $1 ]; then
+        echo "\`$1' already exists"
+    else
+        mkdir $1 && cd $1
+    fi
+}
+
+# wego weather function | usage wttr `city`
+wr() {
+    curl http://wttr.in/$1
+}
+
+# replaces spaces with underscores
+uspace() {
+    for i in *
+        do
+            [ ! "$i" == "$(echo $i | tr '\ ' '_')" && mv ./"$i" ./$(echo $i | tr '\ ' '_')]
+        done
+}
+
+# extract function | Usage: extract <file>
+extract() {
+    if [ -f $1 ]; then
+        case $1 in
+            *.tar.bz2) tar xvjf $1   ;;
+            *.tar.gz)  tar xvzf $1   ;;
+            *.bz2)     bunzip2 $1    ;;
+            *.rar)     rar x $1      ;;
+            *.gz)      gunzip $1     ;;
+            *.tar)     tar xvf $1    ;;
+            *.tbz2)    tar xvjf $1   ;;
+            *.tgz)     tar xvzf $1   ;;
+            *.zip)     unzip $1      ;;
+            *.Z)       uncompress $1 ;;
+            *.7z)      7z x $1       ;;
+            *)         echo "don't know how to extract '$1'..." ;;
+        esac
+    else
+        echo "'$1' is not a valid file!"
+    fi
+}
+
+#!/bin/bash
+
+tube() {
+    until youtube-dl -f 22 -i -o "%(playlist_index)s. %(title)s.%(ext)s" $1; do
+        sleep 5;
+    done;
+}
+
 # Alias definitions.
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
