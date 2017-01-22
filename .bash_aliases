@@ -20,6 +20,7 @@ alias kall='sudo killall'
 alias radio='pyradio -s ~/Music/stations.csv'
 alias update='pip install --upgrade --user youtube-dl pyradio pip && sudo apt -y update && sudo apt -y upgrade && sudo apt-get -y autoremove && sudo apt-get -y autoclean'
 alias remove='sudo apt-get purge'
+alias reboot='sudo reboot'
 # shortcuts
 alias ..='cd ..'
 alias ...='cd ../..'

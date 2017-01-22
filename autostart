@@ -3,4 +3,4 @@ compton -b &
 lxpanel &
 redshift &
 feh --bg-scale ~/Pictures/b.jpg &
-(sleep 2 && minidlnad -f ~/.minidlna/minidlna.conf)
+(sleep 5 && rygel) &
