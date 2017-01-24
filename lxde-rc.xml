@@ -377,7 +377,7 @@
     </keybind>
     <keybind key="F10">
       <action name="Execute">
-        <command>xbacklight -5</command>
+        <command>xbacklight +5</command>
       </action>
     </keybind>
     <!-- Launch scrot when PrintScreen is pressed -->
