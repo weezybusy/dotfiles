@@ -29,5 +29,7 @@ alias stuff='cd /media/weezy/stuff'
 alias work='cd /media/weezy/work'
 alias c='cd ~/Documents/sandbox/c'
 alias py='cd ~/Documents/sandbox/python'
+alias videos='cd /media/weezy/stuff/videos'
+alias music='cd /media/weezy/stuff/music'
 # backup working directory
 alias backup='rsync -urv --delete  --exclude="/lost+found" /media/$USER/work/* /media/$USER/stuff/documents/work'
