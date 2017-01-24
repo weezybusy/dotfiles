@@ -7,7 +7,6 @@ set showcmd
 set ignorecase
 set smartcase
 set incsearch
-set hlsearch
 set nostartofline
 set number
 set relativenumber

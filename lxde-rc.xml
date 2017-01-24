@@ -87,17 +87,8 @@
       <slant>normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
-    <font place="OnScreenDisplay">
-      <name>sans</name>
-      <size>10</size>
-      <!-- font size in points -->
-      <weight>bold</weight>
-      <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
-      <!-- 'italic' or 'normal' -->
-    </font>
     <font place="ActiveOnScreenDisplay">
-      <name>Sans</name>
+      <name/>
       <size>8</size>
       <weight/>
       <slant/>
@@ -118,18 +109,20 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>2</number>
+    <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>WEB</name>
       <name>TERM</name>
+      <name>FILES</name>
+      <name>CHAT</name>
     </names>
-    <popupTime>375</popupTime>
+    <popupTime>475</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
        desktops.  Set this to 0 to disable the popup. -->
   </desktops>
   <resize>
-    <drawContents>no</drawContents>
+    <drawContents>yes</drawContents>
     <popupShow>Nonpixel</popupShow>
     <!-- 'Always', 'Never', or 'Nonpixel' (xterms and such) -->
     <popupPosition>Center</popupPosition>
@@ -223,14 +216,24 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="W-1">
+    <keybind key="A-1">
       <action name="Desktop">
         <desktop>1</desktop>
       </action>
     </keybind>
-    <keybind key="W-2">
+    <keybind key="A-2">
       <action name="Desktop">
         <desktop>2</desktop>
+      </action>
+    </keybind>
+    <keybind key="A-3">
+      <action name="Desktop">
+        <desktop>3</desktop>
+      </action>
+    </keybind>
+    <keybind key="A-4">
+      <action name="Desktop">
+        <desktop>4</desktop>
       </action>
     </keybind>
     <keybind key="W-d">
@@ -240,7 +243,7 @@
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- Keybindings for windows -->
-    <keybind key="A-F4">
+    <keybind key="W-q">
       <action name="Close"/>
     </keybind>
     <keybind key="A-Escape">
@@ -252,6 +255,9 @@
       <action name="ShowMenu">
         <menu>client-menu</menu>
       </action>
+    </keybind>
+    <keybind key="W-a">
+      <action name="ToggleMaximize"/>
     </keybind>
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
@@ -267,63 +273,65 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
-    <keybind key="W-w">
+    <keybind key="W-c">
       <action name="Execute">
-        <command>chromium</command>
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>!Qalculate</name>
+        </startupnotify>
+        <command>qalculate-gtk</command>
       </action>
     </keybind>
     <keybind key="W-f">
       <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>PCManFM</name>
+        </startupnotify>
         <command>pcmanfm</command>
+      </action>
+    </keybind>
+    <keybind key="W-w">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Firefox</name>
+        </startupnotify>
+        <command>firefox-esr</command>
       </action>
     </keybind>
     <keybind key="W-t">
       <action name="Execute">
-        <command>uxterm -e "tmux -2"</command>
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>UXterm</name>
+        </startupnotify>
+        <command>uxterm</command>
       </action>
     </keybind>
     <keybind key="W-m">
       <action name="Execute">
-        <command>/home/weezy/.local/bin/Telegram -startintray</command>
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Telegram</name>
+        </startupnotify>
+        <command>~/.local/bin/Telegram -startintray</command>
       </action>
     </keybind>
-    <keybind key="W-c">
+    <keybind key="W-l">
       <action name="Execute">
-        <command>qalculate-gtk</command>
+        <command>dm-tool lock</command>
       </action>
     </keybind>
-    <!-- Sound controls -->
-    <keybind key="F7">
+    <keybind key="W-Delete">
       <action name="Execute">
-        <command>amixer -q set Master 5%- unmute</command>
-      </action>
-    </keybind>
-    <keybind key="F8">
-      <action name="Execute">
-        <command>amixer -q set Master 5%+ unmute</command>
-      </action>
-    </keybind>
-    <!-- Brightness controls -->
-    <keybind key="F9">
-      <action name="Execute">
-        <command>xbacklight -dec 5</command>
-      </action>
-    </keybind>
-    <keybind key="F10">
-      <action name="Execute">
-        <command>xbacklight -inc 5</command>
-      </action>
-    </keybind>
-    <!-- Launch Scrot when PrintScreen is pressed -->
-    <keybind key="Print">
-      <action name="Execute">
-        <command>scrot</command>
+        <command>lxsession-logout</command>
       </action>
     </keybind>
     <!--keybindings for LXPanel -->
     <keybind key="W-r">
       <action name="Execute">
-        <command>lxpanelctl run</command>
+        <command>gmrun</command>
       </action>
     </keybind>
     <keybind key="A-F2">
@@ -345,19 +353,37 @@
       <action name="ToggleFullscreen"/>
     </keybind>
     <!-- Launch Task Manager with Ctrl+Alt+Del -->
-    <keybind key="A-C-T">
+    <keybind key="A-C-Delete">
       <action name="Execute">
         <command>lxtask</command>
       </action>
     </keybind>
-    <keybind key="C-A-Delete">
+    <!-- Sound controls -->
+    <keybind key="F7">
       <action name="Execute">
-        <command>lxsession-logout</command>
+        <command>amixer -q set Master 5%- unmute</command>
       </action>
     </keybind>
-    <keybind key="C-A-l">
+    <keybind key="F8">
       <action name="Execute">
-        <command>dm-tool lock</command>
+        <command>amixer -q set Master 5%+ unmute</command>
+      </action>
+    </keybind>
+    <!-- Brightness controls -->
+    <keybind key="F9">
+      <action name="Execute">
+        <command>xbacklight -5</command>
+      </action>
+    </keybind>
+    <keybind key="F10">
+      <action name="Execute">
+        <command>xbacklight -5</command>
+      </action>
+    </keybind>
+    <!-- Launch scrot when PrintScreen is pressed -->
+    <keybind key="Print">
+      <action name="Execute">
+        <command>scrot</command>
       </action>
     </keybind>
     <!-- Launch LXRandR when Fn+Screen is pressed -->
@@ -372,7 +398,7 @@
     <!-- number of pixels the mouse must move before a drag begins -->
     <doubleClickTime>200</doubleClickTime>
     <!-- in milliseconds (1000 = 1 second) -->
-    <screenEdgeWarpTime>0</screenEdgeWarpTime>
+    <screenEdgeWarpTime>400</screenEdgeWarpTime>
     <!-- Time before changing desktops when the pointer touches the edge of the
        screen while moving a window, in milliseconds (1000 = 1 second).
        Set this to 0 to disable warping -->

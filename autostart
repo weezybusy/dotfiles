@@ -3,4 +3,3 @@ compton -b &
 lxpanel &
 redshift &
 feh --bg-scale ~/Pictures/b.jpg &
-(sleep 5 && rygel -c ~/.config/rygel.conf) &
