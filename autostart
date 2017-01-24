@@ -1,5 +1,6 @@
-pcmanfm -d &
-compton -b &
-lxpanel &
-redshift &
-feh --bg-scale ~/Pictures/b.jpg &
+@lxpanel --profile LXDE
+@pcmanfm --desktop --profile LXDE
+@xscreensaver -no-splash
+@compton -b
+@redshift
+@/home/weezy/.local/bin/minidlna

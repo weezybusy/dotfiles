@@ -1,0 +1,9 @@
+#!/bin/bash
+
+NAME=minidlna
+DIR=~/.config/$NAME
+CONFIGFILE=$DIR/$NAME.conf
+PIDFILE=$DIR/$NAME.pid
+
+sleep 10
+minidlnad -f $CONFIGFILE -P $PIDFILE
