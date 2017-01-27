@@ -12,7 +12,7 @@ esac
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
 
-HISTIGNORE="h:history:l:ll:ls"
+HISTIGNORE="h:history:l:ll:ls:cd \-"
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
