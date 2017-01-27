@@ -12,7 +12,7 @@ esac
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
 
-HISTIGNORE=
+HISTIGNORE="h:history:l:ll:ls"
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
@@ -92,9 +92,9 @@ cdf() {
 # automatically do an ls after each cd
 cdl() {
     if [ -n "$1" ]; then
-        builtin cd "$@" && ls --group-directories-first --color=auto
+        builtin cd "$@" && ls -hl --group-directories-first --color=auto
     else
-        builtin cd ~ && ls --group-directories-first --color=auto
+        builtin cd ~ && ls -hl --group-directories-first --color=auto
     fi
 }
 
