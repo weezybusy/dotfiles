@@ -112,10 +112,10 @@
     <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>WEB</name>
-      <name>CODE</name>
-      <name>BASH</name>
-      <name>OTHER</name>
+      <name>I</name>
+      <name>II</name>
+      <name>III</name>
+      <name>IV</name>
     </names>
     <popupTime>475</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
