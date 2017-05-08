@@ -6,4 +6,4 @@ CONFIGFILE=$DIR/$NAME.conf
 PIDFILE=$DIR/$NAME.pid
 
 sleep 10
-minidlnad -f $CONFIGFILE -P $PIDFILE
+minidlnad -R -f $CONFIGFILE -P $PIDFILE
