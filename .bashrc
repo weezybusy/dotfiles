@@ -144,12 +144,47 @@ extract() {
     fi
 }
 
-#!/bin/bash
-
+# Download youtube playlist.
 tube() {
-    until youtube-dl -f 22 -i -o "%(playlist_index)s. %(title)s.%(ext)s" $1; do
-        sleep 5;
-    done;
+    if (( $# != 3 )); then
+        echo "Usage: tube [URL] [PATH] [PLAYLIST NAME]"
+        return
+    fi
+
+    playlist_url=$1
+    playlist_path=$2
+    playlist_name=$3
+    return_path=$PWD
+
+    if [ $playlist_path == "games" ]; then
+            playlist_path="/media/$USER/stuff/videos/games"
+    elif [ $playlist_path == "study" ]; then
+            playlist_path="/media/$USER/stuff/videos/study"
+    fi
+
+    if [ -d $playlist_path ]; then
+        playlist="$(realpath $playlist_path/$playlist_name)"
+
+        if [ -d $playlist ]; then
+            echo "$playlist: Directory already exists"
+            return
+        fi
+
+        echo "Creating $playlist"...
+        mkdir $playlist
+        cd $playlist
+
+        until youtube-dl -f 22 -i -o \
+                "%(playlist_index)s.  %(title)s.%(ext)s" $playlist_url; do
+            sleep 5;
+        done;
+
+        cd $return_path
+        notify-send "Playlist $playlist_name has been downloaded"
+    else
+        echo "$playlist_path: No such directory"
+        return
+    fi
 }
 
 # Alias definitions.
