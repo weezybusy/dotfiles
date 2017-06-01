@@ -187,6 +187,11 @@ tube() {
     fi
 }
 
+unplug() {
+    udisksctl unmount -b /dev/$1
+    udisksctl power-off -b /dev/$1
+}
+
 # Alias definitions.
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
