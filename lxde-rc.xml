@@ -261,6 +261,15 @@
         <command>uxterm</command>
       </action>
     </keybind>
+    <keybind key="W-e">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>emacs</name>
+        </startupnotify>
+        <command>emacs</command>
+      </action>
+    </keybind>
     <keybind key="W-m">
       <action name="Execute">
         <startupnotify>
@@ -284,11 +293,6 @@
     <keybind key="A-F2">
       <action name="Execute">
         <command>gmrun</command>
-      </action>
-    </keybind>
-    <keybind key="C-Escape">
-      <action name="Execute">
-        <command>lxpanelctl menu</command>
       </action>
     </keybind>
     <keybind key="A-F1">
