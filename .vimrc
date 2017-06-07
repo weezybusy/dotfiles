@@ -27,5 +27,4 @@ set timeoutlen=1000
 set ttimeoutlen=100
 set t_Co=256
 syntax on
-set bg=dark
-colo gruvbox
+set bg=light

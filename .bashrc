@@ -172,7 +172,7 @@ tube() {
         mkdir $playlist
         cd $playlist
 
-        until youtube-dl -f 22 -i -o \
+        until ~/.local/bin/youtube-dl -f 22 -i -o \
                 "%(playlist_index)s.  %(title)s.%(ext)s" $playlist_url; do
             sleep 5;
         done;
