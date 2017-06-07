@@ -49,7 +49,7 @@ case "$TERM" in
 esac
 
 # Colored prompt
-force_color_prompt=yes
+#force_color_prompt=no
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then

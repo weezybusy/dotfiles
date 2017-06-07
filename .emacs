@@ -1,61 +1,65 @@
+;;************************************
+;; Add melpa repos
+;;************************************
+
 (require 'package)
 (add-to-list 'package-archives
              '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 (when (< emacs-major-version 24)
-      (add-to-list 'package-archives
-                   '("gnu" . "http://elpa.gnu.org/packages/")))
+      (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (package-initialize)
 
-; Convinient shortcuts
-(global-set-key (kbd "C-?") 'help-command)
-(global-set-key (kbd "M-?") 'mark-paragraph)
-(global-set-key (kbd "C-h") 'delete-backward-char)
-(global-set-key (kbd "M-h") 'backward-kill-word)
 
-; Show line numbers
-;(add-hook 'prog-mode-hook 'linum-mode)
+;;************************************
+;; My customisations
+;;************************************
 
-; Set C indentation to 8 spaces
-(setq-default c-basic-offset 8)
+;; Use 8 spaces for autoindent
+(setq c-default-style "linux"
+      c-basic-offset 8)
 
-; Remove unwanted UI elements
-(menu-bar-mode -1)
-(when (display-graphic-p)
-    (tool-bar-mode -1)
-      (scroll-bar-mode -1))
+;; Set column-mode to always be on
+(setq column-number-mode t)
 
-; No startup and start in home directory
+;; No startup message
 (setq inhibit-startup-message t)
-(setq inhibit-splash-screen t)
-(setq initial-scratch-message nil)
 
-; Scroll like in Vim
-(setq scroll-step            1
-      scroll-conservatively  10000)
+;; Have Emacs window to always show your system name
+;; and the full path of the buffer you're currently
+;; editing
+(setq frame-title-format
+      (list (format "%s %%S: %%j " (system-name))
+            '(buffer-file-name "%f" (dired-directory dired-directory "%b"))))
 
-; Handle autosave
-(defvar backup-dir (expand-file-name "~/.emacs.d/emacs_backup/"))
-(defvar autosave-dir (expand-file-name "~/.emacs.d/autosave/"))
-(setq backup-directory-alist (list (cons ".*" backup-dir)))
-(setq auto-save-list-file-prefix autosave-dir)
-(setq auto-save-file-name-transforms `((".*" ,autosave-dir t)))
-(setq tramp-backup-directory-alist backup-directory-alist)
-(setq tramp-auto-save-directory autosave-dir)
 
-; Show trailing whitespace
-(require 'whitespace)
-(setq-default show-trailing-whitespace t)
+;;************************************
+;; Configure Emacs to use with scheme.
+;;************************************
 
-(defun no-trailing-whitespace ()
-    (setq show-trailing-whitespace nil))
+;;; Always do syntax highlighting
+(global-font-lock-mode 1)
 
-(add-hook 'minibuffer-setup-hook
-          'no-trailing-whitespace)
-(add-hook 'eww-mode-hook
-          'no-trailing-whitespace)
-(add-hook 'ielm-mode-hook
-          'no-trailing-whitespace)
-(add-hook 'gdb-mode-hook
-         'no-trailing-whitespace)
-(add-hook 'help-mode-hook
-          'no-trailing-whitespace)
+;;; Also highlight parens
+(setq show-paren-delay 0
+            show-paren-style 'parenthesis)
+(show-paren-mode 1)
+
+;;; This is the binary name of my scheme implementation
+(setq scheme-program-name "mzscheme")
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ansi-color-names-vector
+   ["#3c3836" "#fb4934" "#b8bb26" "#fabd2f" "#83a598" "#d3869b" "#8ec07c" "#ebdbb2"])
+ '(custom-enabled-themes (quote (sanityinc-tomorrow-day)))
+ '(custom-safe-themes
+   (quote
+    ("bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" "4eb982b248bf818a72877ecb126a2f95d71eea24680022789b14c3dec7629c1b" default))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
