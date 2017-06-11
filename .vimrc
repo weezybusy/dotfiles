@@ -28,3 +28,4 @@ set ttimeoutlen=100
 set t_Co=256
 syntax on
 set bg=light
+colo Tomorrow

@@ -53,10 +53,13 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector
    ["#3c3836" "#fb4934" "#b8bb26" "#fabd2f" "#83a598" "#d3869b" "#8ec07c" "#ebdbb2"])
+ '(column-number-mode t)
  '(custom-enabled-themes (quote (sanityinc-tomorrow-day)))
  '(custom-safe-themes
    (quote
-    ("bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" "4eb982b248bf818a72877ecb126a2f95d71eea24680022789b14c3dec7629c1b" default))))
+    ("bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" "4eb982b248bf818a72877ecb126a2f95d71eea24680022789b14c3dec7629c1b" default)))
+ '(show-paren-mode t)
+ '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
