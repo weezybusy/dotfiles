@@ -1,9 +1,4 @@
 #!/bin/bash
 
-NAME=minidlna
-DIR=~/.$NAME
-CONFIGFILE=$DIR/$NAME.conf
-PIDFILE=$DIR/$NAME.pid
-
 sleep 10
-minidlnad -R -f $CONFIGFILE -P $PIDFILE
+/usr/sbin/minidlnad -f /etc/minidlna.conf -R
