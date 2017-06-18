@@ -4,3 +4,4 @@
 @compton -b
 @redshift
 @/home/weezy/.local/bin/minidlna
+@/home/weezy/.local/bin/Telegram/Telegram -startintray
