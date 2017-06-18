@@ -14,6 +14,10 @@
 ;; My customisations
 ;;************************************
 
+;; Scroll like in Vim
+(setq scroll-step 1
+      scroll-conservatively 10000)
+
 ;; Use 8 spaces for autoindent
 (setq c-default-style "linux"
       c-basic-offset 8)
@@ -22,7 +26,7 @@
 (setq column-number-mode t)
 
 ;; No startup message
-(setq inhibit-startup-message t)
+;;(setq inhibit-startup-message t)
 
 ;; Have Emacs window to always show your system name
 ;; and the full path of the buffer you're currently
@@ -36,9 +40,6 @@
 ;; Configure Emacs to use with scheme.
 ;;************************************
 
-;;; Always do syntax highlighting
-(global-font-lock-mode 1)
-
 ;;; Also highlight parens
 (setq show-paren-delay 0
             show-paren-style 'parenthesis)
@@ -46,6 +47,7 @@
 
 ;;; This is the binary name of my scheme implementation
 (setq scheme-program-name "mzscheme")
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -66,3 +68,4 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+(put 'erase-buffer 'disabled nil)

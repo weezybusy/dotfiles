@@ -144,14 +144,15 @@ extract() {
 
 # Download youtube playlist.
 tube() {
-    if (( $# != 3 )); then
-        echo "Usage: tube [URL] [PATH] [PLAYLIST NAME]"
+    if (( $# != 4 )); then
+        echo "Usage: tube [URL] [PATH] [PLAYLIST NAME] [QUALITY]"
         return
     fi
 
     playlist_url=$1
     playlist_path=$2
     playlist_name=$3
+    playlist_quality=$4
     return_path=$PWD
 
     if [ $playlist_path == "games" ]; then
@@ -172,10 +173,17 @@ tube() {
         mkdir $playlist
         cd $playlist
 
-        until ~/.local/bin/youtube-dl -f 22 -i -o \
-                "%(playlist_index)s.  %(title)s.%(ext)s" $playlist_url; do
-            sleep 5;
-        done;
+        if [ $playlist_quality == "1080" ]; then
+            until ~/.local/bin/youtube-dl -f 137+140 -i -o \
+                    "%(playlist_index)s. %(title)s.%(ext)s" $playlist_url; do
+                sleep 5;
+            done;
+        else
+            until ~/.local/bin/youtube-dl -f 22 -i -o \
+                    "%(playlist_index)s. %(title)s.%(ext)s" $playlist_url; do
+                sleep 5;
+            done;
+        fi
 
         cd $return_path
         notify-send "Playlist $playlist_name has been downloaded"
