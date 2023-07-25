@@ -1,4 +1,0 @@
-#!/bin/bash
-
-sleep 10
-/usr/sbin/minidlnad -f /etc/minidlna.conf -R

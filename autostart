@@ -1,7 +1,0 @@
-@lxpanel --profile LXDE
-@pcmanfm --desktop --profile LXDE
-@xscreensaver -no-splash
-@compton -b
-@redshift
-@/home/weezy/.local/bin/minidlna
-@/home/weezy/.local/bin/Telegram/Telegram -startintray
